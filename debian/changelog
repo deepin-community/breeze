@@ -1,3 +1,9 @@
+breeze (4:5.24.3-1deepin) unstable; urgency=medium
+
+  * update changelog.
+
+ -- LiChengGang <lichenggang@uniontech.com>  Fri, 24 Feb 2023 09:42:05 +0800
+
 breeze (4:5.24.3-1) unstable; urgency=medium
 
   [ Aurélien COUDERC ]
