@@ -1,33 +1,5 @@
 add_definitions(-DTRANSLATION_DOMAIN="breeze_kwin_deco")
 
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS CoreAddons GuiAddons ConfigWidgets WindowSystem I18n IconThemes)
-find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS DBus)
-
-### XCB
-find_package(XCB COMPONENTS XCB)
-set_package_properties(XCB PROPERTIES
-  DESCRIPTION "X protocol C-language Binding"
-  URL "https://xcb.freedesktop.org"
-  TYPE OPTIONAL
-  PURPOSE "Required to pass style properties to native Windows on X11 Platform"
-)
-
-if(UNIX AND NOT APPLE)
-
-  set(BREEZE_HAVE_X11 ${XCB_XCB_FOUND})
-  if (XCB_XCB_FOUND)
-    find_package(Qt5 ${QT_MIN_VERSION} REQUIRED CONFIG COMPONENTS X11Extras)
-  endif()
-
-else()
-
-  set(BREEZE_HAVE_X11 FALSE)
-
-endif()
-
-################# configuration #################
-configure_file(config-breeze.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-breeze.h )
-
 ################# includes #################
 include_directories(${CMAKE_SOURCE_DIR}/libbreezecommon)
 include_directories(${CMAKE_BINARY_DIR}/libbreezecommon)
@@ -37,61 +9,33 @@ include_directories(${CMAKE_BINARY_DIR}/libbreezecommon)
 set(breezedecoration_SRCS
     breezebutton.cpp
     breezedecoration.cpp
-    breezeexceptionlist.cpp
     breezesettingsprovider.cpp
-    breezesizegrip.cpp)
-
-kconfig_add_kcfg_files(breezedecoration_SRCS breezesettings.kcfgc)
-
-### config classes
-### they are kept separately because they might move in a separate library in the future
-set(breezedecoration_config_SRCS
-    config/breezeconfigwidget.cpp
-    config/breezedetectwidget.cpp
-    config/breezeexceptiondialog.cpp
-    config/breezeexceptionlistwidget.cpp
-    config/breezeexceptionmodel.cpp
-    config/breezeitemmodel.cpp
+    breezeexceptionlist.cpp
 )
-
-set(breezedecoration_config_PART_FORMS
-   config/ui/breezeconfigurationui.ui
-   config/ui/breezedetectwidget.ui
-   config/ui/breezeexceptiondialog.ui
-   config/ui/breezeexceptionlistwidget.ui
-)
-
-ki18n_wrap_ui(breezedecoration_config_PART_FORMS_HEADERS ${breezedecoration_config_PART_FORMS})
 
 ### build library
+kconfig_add_kcfg_files(breezedecoration_SRCS breezesettings.kcfgc)
 add_library(breezedecoration MODULE
     ${breezedecoration_SRCS}
-    ${breezedecoration_config_SRCS}
     ${breezedecoration_config_PART_FORMS_HEADERS})
 
+set_target_properties(breezedecoration PROPERTIES
+    OUTPUT_NAME org.kde.breeze
+)
+
 target_link_libraries(breezedecoration
-    PUBLIC
-        Qt::Core
-        Qt::Gui
-        Qt::DBus
     PRIVATE
-        breezecommon5
-        KDecoration2::KDecoration
-        KF5::ConfigCore
-        KF5::CoreAddons
-        KF5::ConfigWidgets
-        KF5::GuiAddons
-        KF5::I18n
-        KF5::IconThemes
-        KF5::WindowSystem)
+        breezecommon6
+        Qt6::DBus
+        KF6::CoreAddons
+        KF6::ConfigGui
+        KF6::GuiAddons
+        KF6::I18n
+        KF6::IconThemes
+        KDecoration3::KDecoration
+)
 
-if(BREEZE_HAVE_X11)
-  target_link_libraries(breezedecoration
-    PUBLIC
-      Qt::X11Extras
-      XCB::XCB)
-endif()
+install(TARGETS breezedecoration DESTINATION ${KDE_INSTALL_PLUGINDIR}/${KDECORATION_PLUGIN_DIR})
 
+add_subdirectory(config)
 
-install(TARGETS breezedecoration DESTINATION ${KDE_INSTALL_PLUGINDIR}/org.kde.kdecoration2)
-install(FILES config/breezedecorationconfig.desktop DESTINATION  ${KDE_INSTALL_KSERVICES5DIR})

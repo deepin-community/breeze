@@ -1,14 +1,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Lukáš Tinkl <lukas@kde.org>, 2010, 2011, 2012, 2013.
-# Vít Pelčák <vit@pelcak.org>, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2018, 2019, 2020.
+# Vít Pelčák <vit@pelcak.org>, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2018, 2019, 2020, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: kwin_clients\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-01-02 00:48+0000\n"
-"PO-Revision-Date: 2020-05-18 20:44+0200\n"
+"POT-Creation-Date: 2025-11-17 14:41+0000\n"
+"PO-Revision-Date: 2023-03-06 16:59+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -16,99 +16,123 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 20.04.0\n"
+"X-Generator: Lokalize 22.12.3\n"
 
-#: config/breezeexceptionlistwidget.cpp:97
+#: config/breezeexceptionlistwidget.cpp:88
 #, kde-format
 msgid "New Exception - Breeze Settings"
 msgstr "Nová výjimka - Nastavení Breeze"
 
-#: config/breezeexceptionlistwidget.cpp:145
+#: config/breezeexceptionlistwidget.cpp:136
 #, kde-format
 msgid "Edit Exception - Breeze Settings"
 msgstr "Upravit výjimku - Nastavení Breeze"
 
-#: config/breezeexceptionlistwidget.cpp:176
+#: config/breezeexceptionlistwidget.cpp:167
 #, kde-format
 msgid "Question - Breeze Settings"
 msgstr "Otázka - Nastavení Breeze"
 
-#: config/breezeexceptionlistwidget.cpp:176
+#: config/breezeexceptionlistwidget.cpp:168
 #, kde-format
 msgid "Remove selected exception?"
 msgstr "Odebrat zvolenou výjimku?"
 
 #. i18n: ectx: property (text), widget (QPushButton, removeButton)
-#: config/breezeexceptionlistwidget.cpp:177
+#: config/breezeexceptionlistwidget.cpp:170
 #: config/ui/breezeexceptionlistwidget.ui:91
 #, kde-format
 msgid "Remove"
 msgstr "Odstranit"
 
-#: config/breezeexceptionlistwidget.cpp:314
+#: config/breezeexceptionlistwidget.cpp:300
 #, kde-format
 msgid "Warning - Breeze Settings"
 msgstr "Varování - Nastavení Breeze"
 
-#: config/breezeexceptionlistwidget.cpp:314
+#: config/breezeexceptionlistwidget.cpp:300
 #, kde-format
 msgid "Regular Expression syntax is incorrect"
 msgstr "Syntaxe regulárního výrazu je nesprávná"
 
-#: config/breezeexceptionmodel.cpp:21
+#: config/breezeexceptionmodel.cpp:17
 #, kde-format
 msgid "Exception Type"
 msgstr "Typ výjimky"
 
-#: config/breezeexceptionmodel.cpp:22
+#: config/breezeexceptionmodel.cpp:17
 #, kde-format
 msgid "Regular Expression"
 msgstr "Regulární výraz"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, exceptionType)
-#: config/breezeexceptionmodel.cpp:47 config/ui/breezeexceptiondialog.ui:72
+#: config/breezeexceptionmodel.cpp:36 config/ui/breezeexceptiondialog.ui:72
 #, kde-format
 msgid "Window Title"
 msgstr "Titulek okna"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, exceptionType)
-#: config/breezeexceptionmodel.cpp:51 config/ui/breezeexceptiondialog.ui:67
+#: config/breezeexceptionmodel.cpp:40 config/ui/breezeexceptiondialog.ui:67
 #, kde-format
 msgid "Window Class Name"
 msgstr "Název třídy okna"
 
-#: config/breezeexceptionmodel.cpp:67
+#: config/breezeexceptionmodel.cpp:55
 #, kde-format
 msgid "Enable/disable this exception"
 msgstr "Povolit/zakázat tuto výjimku"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: config/ui/breezeconfigurationui.ui:33
+#: config/ui/breezeconfigurationui.ui:36
 #, kde-format
 msgid "General"
 msgstr "Obecné"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: config/ui/breezeconfigurationui.ui:39
+#: config/ui/breezeconfigurationui.ui:45
 #, kde-format
 msgid "Tit&le alignment:"
 msgstr "Zarovnání titu&lku:"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, titleAlignment)
+#: config/ui/breezeconfigurationui.ui:56
+#, kde-format
+msgid "Left"
+msgstr "Vlevo"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, titleAlignment)
+#: config/ui/breezeconfigurationui.ui:61
+#, kde-format
+msgid "Center"
+msgstr "Uprostřed"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, titleAlignment)
+#: config/ui/breezeconfigurationui.ui:66
+#, kde-format
+msgid "Center (Full Width)"
+msgstr "Na střed (plná šířka)"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, titleAlignment)
+#: config/ui/breezeconfigurationui.ui:71
+#, kde-format
+msgid "Right"
+msgstr "Vpravo"
+
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: config/ui/breezeconfigurationui.ui:52
+#: config/ui/breezeconfigurationui.ui:79
 #, kde-format
 msgid "B&utton size:"
 msgstr "Velikost &tlačítka:"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, buttonSize)
-#: config/ui/breezeconfigurationui.ui:66
+#: config/ui/breezeconfigurationui.ui:90
 #, kde-format
 msgid "Tiny"
 msgstr "Drobná"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, buttonSize)
 #. i18n: ectx: property (text), item, widget (QComboBox, shadowSize)
-#: config/ui/breezeconfigurationui.ui:71 config/ui/breezeconfigurationui.ui:198
+#: config/ui/breezeconfigurationui.ui:95 config/ui/breezeconfigurationui.ui:202
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Small"
@@ -116,7 +140,8 @@ msgstr "Malá"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, buttonSize)
 #. i18n: ectx: property (text), item, widget (QComboBox, shadowSize)
-#: config/ui/breezeconfigurationui.ui:76 config/ui/breezeconfigurationui.ui:203
+#: config/ui/breezeconfigurationui.ui:100
+#: config/ui/breezeconfigurationui.ui:207
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Medium"
@@ -124,7 +149,8 @@ msgstr "Střední"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, buttonSize)
 #. i18n: ectx: property (text), item, widget (QComboBox, shadowSize)
-#: config/ui/breezeconfigurationui.ui:81 config/ui/breezeconfigurationui.ui:208
+#: config/ui/breezeconfigurationui.ui:105
+#: config/ui/breezeconfigurationui.ui:212
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Large"
@@ -132,147 +158,138 @@ msgstr "Velká"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, buttonSize)
 #. i18n: ectx: property (text), item, widget (QComboBox, shadowSize)
-#: config/ui/breezeconfigurationui.ui:86 config/ui/breezeconfigurationui.ui:213
+#: config/ui/breezeconfigurationui.ui:110
+#: config/ui/breezeconfigurationui.ui:217
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Very Large"
 msgstr "Velmi velká"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, titleAlignment)
-#: config/ui/breezeconfigurationui.ui:95
-#, kde-format
-msgid "Left"
-msgstr "Vlevo"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, titleAlignment)
-#: config/ui/breezeconfigurationui.ui:100
-#, kde-format
-msgid "Center"
-msgstr "Uprostřed"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, titleAlignment)
-#: config/ui/breezeconfigurationui.ui:105
-#, kde-format
-msgid "Center (Full Width)"
-msgstr "Na střed (plná šířka)"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, titleAlignment)
-#: config/ui/breezeconfigurationui.ui:110
-#, kde-format
-msgid "Right"
-msgstr "Vpravo"
-
-#. i18n: ectx: property (text), widget (QCheckBox, drawSizeGrip)
-#: config/ui/breezeconfigurationui.ui:144
-#, kde-format
-msgid "Add handle to resize windows with no border"
-msgstr "Přidat úchytku pro změnu velikosti oken bez okrajů"
-
-#. i18n: ectx: property (text), widget (QCheckBox, drawBorderOnMaximizedWindows)
-#: config/ui/breezeconfigurationui.ui:151
-#, kde-format
-msgid "Allow resizing maximized windows from window edges"
-msgstr "Povolit změnu velikosti maximalizovaným oknům úchopem za okraj okna"
-
 #. i18n: ectx: property (text), widget (QCheckBox, outlineCloseButton)
-#: config/ui/breezeconfigurationui.ui:158
+#: config/ui/breezeconfigurationui.ui:118
 #, kde-format
 msgid "Draw a circle around close button"
 msgstr "Kreslit kruh kolem tlačítka zavřít"
 
+#. i18n: ectx: property (text), widget (QCheckBox, drawBorderOnMaximizedWindows)
+#: config/ui/breezeconfigurationui.ui:125
+#, kde-format
+msgid "Draw border on maximized and tiled windows"
+msgstr "Kreslit okraj maximalizovaných a dlaždicovaných oken"
+
+#. i18n: ectx: property (text), widget (QLabel, drawBorderOnMaximizedWindowsHelpLabel)
+#: config/ui/breezeconfigurationui.ui:150
+#, kde-format
+msgid ""
+"This setting will allow you to resize from window edges touching screen "
+"edges. Scrollbars and window close buttons will shift positions and will not "
+"touch screen edges."
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QCheckBox, drawBackgroundGradient)
-#: config/ui/breezeconfigurationui.ui:165
+#: config/ui/breezeconfigurationui.ui:162
 #, kde-format
 msgid "Draw titlebar background gradient"
 msgstr "Vykreslit přechod pruhu titulku okna"
 
-#. i18n: ectx: attribute (title), widget (QWidget, tab_4)
-#: config/ui/breezeconfigurationui.ui:173
+#. i18n: ectx: property (text), widget (QCheckBox, roundedCorners)
+#: config/ui/breezeconfigurationui.ui:169
 #, kde-format
-msgid "Shadows"
-msgstr "Stíny"
+msgid "Round bottom corners of windows with no borders"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_4)
+#: config/ui/breezeconfigurationui.ui:177
+#, kde-format
+msgid "Shadows and Outline"
+msgstr "Stíny a obrys"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: config/ui/breezeconfigurationui.ui:179
+#: config/ui/breezeconfigurationui.ui:186
 #, kde-format
-msgid "Si&ze:"
-msgstr "Veliko&st:"
+msgid "Shadow size:"
+msgstr "Velikost stínu:"
 
 # žádné parametry funkce v inspektoru funkcí
 #. i18n: ectx: property (text), item, widget (QComboBox, shadowSize)
-#: config/ui/breezeconfigurationui.ui:193
+#: config/ui/breezeconfigurationui.ui:197
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "None"
 msgstr "Žádný"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: config/ui/breezeconfigurationui.ui:221
+#: config/ui/breezeconfigurationui.ui:225
 #, kde-format
 msgctxt "strength of the shadow (from transparent to opaque)"
-msgid "S&trength:"
-msgstr "Sí&la:"
+msgid "Shadow strength:"
+msgstr "Síla stínu:"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, shadowStrength)
-#: config/ui/breezeconfigurationui.ui:234
+#: config/ui/breezeconfigurationui.ui:235
 #, no-c-format, kde-format
 msgid "%"
 msgstr "%"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: config/ui/breezeconfigurationui.ui:260
+#: config/ui/breezeconfigurationui.ui:248
 #, kde-format
-msgid "Color:"
-msgstr "Barva:"
+msgid "Shadow color:"
+msgstr "Barva stínu:"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: config/ui/breezeconfigurationui.ui:258
+#, kde-format
+msgctxt "outline intensity"
+msgid "Outline intensity:"
+msgstr "Intenzita obrysu:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, outlineIntensity)
+#: config/ui/breezeconfigurationui.ui:269
+#, kde-format
+msgctxt "@item:inlistbox Outline intensity:"
+msgid "Off"
+msgstr "Vypnuto"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, outlineIntensity)
+#: config/ui/breezeconfigurationui.ui:274
+#, kde-format
+msgctxt "@item:inlistbox Outline intensity:"
+msgid "Low"
+msgstr "Nízká"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, outlineIntensity)
+#: config/ui/breezeconfigurationui.ui:279
+#, kde-format
+msgctxt "@item:inlistbox Outline intensity:"
+msgid "Medium"
+msgstr "Střední"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, outlineIntensity)
+#: config/ui/breezeconfigurationui.ui:284
+#, kde-format
+msgctxt "@item:inlistbox Outline intensity:"
+msgid "High"
+msgstr "Vysoká"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, outlineIntensity)
+#: config/ui/breezeconfigurationui.ui:289
+#, kde-format
+msgctxt "@item:inlistbox Outline intensity:"
+msgid "Maximum"
+msgstr "Maximum"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
-#: config/ui/breezeconfigurationui.ui:287
+#: config/ui/breezeconfigurationui.ui:298
 #, kde-format
 msgid "Window-Specific Overrides"
 msgstr "Výjimky pro specifická okna"
 
-#. i18n: ectx: property (windowTitle), widget (QDialog, BreezeDetectWidget)
 #. i18n: ectx: property (windowTitle), widget (QDialog, BreezeExceptionDialog)
-#: config/ui/breezedetectwidget.ui:14 config/ui/breezeexceptiondialog.ui:14
+#: config/ui/breezeexceptiondialog.ui:14
 #, kde-format
 msgid "Dialog"
 msgstr "Dialog"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: config/ui/breezedetectwidget.ui:20
-#, kde-format
-msgid "Information about Selected Window"
-msgstr "Informace o vybraném oknu"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: config/ui/breezedetectwidget.ui:26
-#, kde-format
-msgid "Class: "
-msgstr "Třída: "
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: config/ui/breezedetectwidget.ui:43
-#, kde-format
-msgid "Title: "
-msgstr "Název: "
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: config/ui/breezedetectwidget.ui:63
-#, kde-format
-msgid "Window Property Selection"
-msgstr "Výběr vlastnosti okna"
-
-#. i18n: ectx: property (text), widget (QRadioButton, windowClassCheckBox)
-#: config/ui/breezedetectwidget.ui:69
-#, kde-format
-msgid "Use window class (whole application)"
-msgstr "Použít třídu okna (celá aplikace)"
-
-#. i18n: ectx: property (text), widget (QRadioButton, windowTitleCheckBox)
-#: config/ui/breezedetectwidget.ui:79
-#, kde-format
-msgid "Use window title"
-msgstr "Použít titulek okna"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: config/ui/breezeexceptiondialog.ui:20
@@ -295,8 +312,8 @@ msgstr "Re&gulární výraz pro porovnání: "
 #. i18n: ectx: property (text), widget (QPushButton, detectDialogButton)
 #: config/ui/breezeexceptiondialog.ui:52
 #, kde-format
-msgid "Detect Window Properties"
-msgstr "Detekovat vlastnosti okna"
+msgid "Detect Window Properties…"
+msgstr "Detekovat vlastnosti okna…"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: config/ui/breezeexceptiondialog.ui:83

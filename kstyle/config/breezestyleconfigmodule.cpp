@@ -8,45 +8,50 @@
 
 #include <KPluginFactory>
 
-
-K_PLUGIN_FACTORY(
-    BreezeStyleConfigFactory,
-    registerPlugin<Breeze::ConfigurationModule>();
-)
+K_PLUGIN_CLASS_WITH_JSON(Breeze::ConfigurationModule, "breezestyleconfig.json")
 
 #include "breezestyleconfigmodule.moc"
 
 namespace Breeze
 {
+//_______________________________________________________________________
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+ConfigurationModule::ConfigurationModule(QObject *parent, const KPluginMetaData &data)
+    : KCModule(parent, data)
+{
+    widget()->setLayout(new QVBoxLayout);
+    widget()->layout()->addWidget(m_config = new StyleConfig(widget()));
+    connect(m_config, &StyleConfig::changed, this, &KCModule::setNeedsSave);
+}
+#else
+ConfigurationModule::ConfigurationModule(QWidget *parent, const QVariantList &args)
+    : KCModule(parent, args)
+{
+    setLayout(new QVBoxLayout(this));
+    layout()->addWidget(m_config = new StyleConfig(this));
+    connect(m_config, static_cast<void (StyleConfig::*)(bool)>(&StyleConfig::changed), this, static_cast<void (KCModule::*)(bool)>(&KCModule::changed));
+}
+#endif
 
-    //_______________________________________________________________________
-    ConfigurationModule::ConfigurationModule(QWidget *parent, const QVariantList &args):
-        KCModule(parent, args)
-    {
-        setLayout(new QVBoxLayout(this));
-        layout()->addWidget( m_config = new StyleConfig( this ) );
-        connect(m_config, static_cast<void (StyleConfig::*)(bool)>(&StyleConfig::changed), this, static_cast<void (KCModule::*)(bool)>(&KCModule::changed));
-    }
+//_______________________________________________________________________
+void ConfigurationModule::defaults()
+{
+    m_config->defaults();
+    KCModule::defaults();
+}
 
-    //_______________________________________________________________________
-    void ConfigurationModule::defaults()
-    {
-        m_config->defaults();
-        KCModule::defaults();
-    }
+//_______________________________________________________________________
+void ConfigurationModule::load()
+{
+    m_config->load();
+    KCModule::load();
+}
 
-    //_______________________________________________________________________
-    void ConfigurationModule::load()
-    {
-        m_config->load();
-        KCModule::load();
-    }
-
-    //_______________________________________________________________________
-    void ConfigurationModule::save()
-    {
-        m_config->save();
-        KCModule::save();
-    }
+//_______________________________________________________________________
+void ConfigurationModule::save()
+{
+    m_config->save();
+    KCModule::save();
+}
 
 }

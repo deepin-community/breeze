@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: breeze\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-01-02 00:48+0000\n"
+"POT-Creation-Date: 2025-11-17 14:41+0000\n"
 "PO-Revision-Date: 2021-07-13 11:32+0530\n"
 "Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: kde-hindi\n"
@@ -17,97 +17,121 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Lokalize 21.04.3\n"
 
-#: config/breezeexceptionlistwidget.cpp:97
+#: config/breezeexceptionlistwidget.cpp:88
 #, kde-format
 msgid "New Exception - Breeze Settings"
 msgstr "नया अपवाद - ब्रीज़ सेटिंग्स"
 
-#: config/breezeexceptionlistwidget.cpp:145
+#: config/breezeexceptionlistwidget.cpp:136
 #, kde-format
 msgid "Edit Exception - Breeze Settings"
 msgstr "अपवाद संपादित करें - ब्रीज़ सेटिंग्स"
 
-#: config/breezeexceptionlistwidget.cpp:176
+#: config/breezeexceptionlistwidget.cpp:167
 #, kde-format
 msgid "Question - Breeze Settings"
 msgstr "प्रश्न - ब्रीज़ सेटिंग्स"
 
-#: config/breezeexceptionlistwidget.cpp:176
+#: config/breezeexceptionlistwidget.cpp:168
 #, kde-format
 msgid "Remove selected exception?"
 msgstr "चयनित अपवाद हटायें ?"
 
 #. i18n: ectx: property (text), widget (QPushButton, removeButton)
-#: config/breezeexceptionlistwidget.cpp:177
+#: config/breezeexceptionlistwidget.cpp:170
 #: config/ui/breezeexceptionlistwidget.ui:91
 #, kde-format
 msgid "Remove"
 msgstr "हटाएँ"
 
-#: config/breezeexceptionlistwidget.cpp:314
+#: config/breezeexceptionlistwidget.cpp:300
 #, kde-format
 msgid "Warning - Breeze Settings"
 msgstr "चेतावनी - ब्रीज़ सेटिंग्स"
 
-#: config/breezeexceptionlistwidget.cpp:314
+#: config/breezeexceptionlistwidget.cpp:300
 #, kde-format
 msgid "Regular Expression syntax is incorrect"
 msgstr "रेगुलर एक्सप्रेशन सिंटेक्स गलत है"
 
-#: config/breezeexceptionmodel.cpp:21
+#: config/breezeexceptionmodel.cpp:17
 #, kde-format
 msgid "Exception Type"
 msgstr "अपवाद प्रकार"
 
-#: config/breezeexceptionmodel.cpp:22
+#: config/breezeexceptionmodel.cpp:17
 #, kde-format
 msgid "Regular Expression"
 msgstr "रेगुलर एक्सप्रेशन"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, exceptionType)
-#: config/breezeexceptionmodel.cpp:47 config/ui/breezeexceptiondialog.ui:72
+#: config/breezeexceptionmodel.cpp:36 config/ui/breezeexceptiondialog.ui:72
 #, kde-format
 msgid "Window Title"
 msgstr "विंडो शीर्षक"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, exceptionType)
-#: config/breezeexceptionmodel.cpp:51 config/ui/breezeexceptiondialog.ui:67
+#: config/breezeexceptionmodel.cpp:40 config/ui/breezeexceptiondialog.ui:67
 #, kde-format
 msgid "Window Class Name"
 msgstr "विंडो वर्ग नाम"
 
-#: config/breezeexceptionmodel.cpp:67
+#: config/breezeexceptionmodel.cpp:55
 #, kde-format
 msgid "Enable/disable this exception"
 msgstr "इस अपवाद को सक्षम/अक्षम करें"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: config/ui/breezeconfigurationui.ui:33
+#: config/ui/breezeconfigurationui.ui:36
 #, kde-format
 msgid "General"
 msgstr "साधारण"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: config/ui/breezeconfigurationui.ui:39
+#: config/ui/breezeconfigurationui.ui:45
 #, kde-format
 msgid "Tit&le alignment:"
 msgstr "शीर्षक पंक्तिबद्धता (&l):"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, titleAlignment)
+#: config/ui/breezeconfigurationui.ui:56
+#, kde-format
+msgid "Left"
+msgstr "बायाँ"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, titleAlignment)
+#: config/ui/breezeconfigurationui.ui:61
+#, kde-format
+msgid "Center"
+msgstr "मध्य"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, titleAlignment)
+#: config/ui/breezeconfigurationui.ui:66
+#, kde-format
+msgid "Center (Full Width)"
+msgstr "मध्य (पूर्ण चौड़ाई)"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, titleAlignment)
+#: config/ui/breezeconfigurationui.ui:71
+#, kde-format
+msgid "Right"
+msgstr "दायाँ"
+
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: config/ui/breezeconfigurationui.ui:52
+#: config/ui/breezeconfigurationui.ui:79
 #, kde-format
 msgid "B&utton size:"
 msgstr "बटन आकार :"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, buttonSize)
-#: config/ui/breezeconfigurationui.ui:66
+#: config/ui/breezeconfigurationui.ui:90
 #, kde-format
 msgid "Tiny"
 msgstr "नन्हा"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, buttonSize)
 #. i18n: ectx: property (text), item, widget (QComboBox, shadowSize)
-#: config/ui/breezeconfigurationui.ui:71 config/ui/breezeconfigurationui.ui:198
+#: config/ui/breezeconfigurationui.ui:95 config/ui/breezeconfigurationui.ui:202
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Small"
@@ -115,7 +139,8 @@ msgstr "छोटा"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, buttonSize)
 #. i18n: ectx: property (text), item, widget (QComboBox, shadowSize)
-#: config/ui/breezeconfigurationui.ui:76 config/ui/breezeconfigurationui.ui:203
+#: config/ui/breezeconfigurationui.ui:100
+#: config/ui/breezeconfigurationui.ui:207
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Medium"
@@ -123,7 +148,8 @@ msgstr "मध्यम"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, buttonSize)
 #. i18n: ectx: property (text), item, widget (QComboBox, shadowSize)
-#: config/ui/breezeconfigurationui.ui:81 config/ui/breezeconfigurationui.ui:208
+#: config/ui/breezeconfigurationui.ui:105
+#: config/ui/breezeconfigurationui.ui:212
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Large"
@@ -131,146 +157,144 @@ msgstr "बड़ा"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, buttonSize)
 #. i18n: ectx: property (text), item, widget (QComboBox, shadowSize)
-#: config/ui/breezeconfigurationui.ui:86 config/ui/breezeconfigurationui.ui:213
+#: config/ui/breezeconfigurationui.ui:110
+#: config/ui/breezeconfigurationui.ui:217
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "Very Large"
 msgstr "बहुत बड़ा"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, titleAlignment)
-#: config/ui/breezeconfigurationui.ui:95
-#, kde-format
-msgid "Left"
-msgstr "बायाँ"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, titleAlignment)
-#: config/ui/breezeconfigurationui.ui:100
-#, kde-format
-msgid "Center"
-msgstr "मध्य"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, titleAlignment)
-#: config/ui/breezeconfigurationui.ui:105
-#, kde-format
-msgid "Center (Full Width)"
-msgstr "मध्य (पूर्ण चौड़ाई)"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, titleAlignment)
-#: config/ui/breezeconfigurationui.ui:110
-#, kde-format
-msgid "Right"
-msgstr "दायाँ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, drawSizeGrip)
-#: config/ui/breezeconfigurationui.ui:144
-#, kde-format
-msgid "Add handle to resize windows with no border"
-msgstr "बिना सीमारेखा वाली विंडो का आकार बदलने के लिए हैंडल जोड़ें"
-
-#. i18n: ectx: property (text), widget (QCheckBox, drawBorderOnMaximizedWindows)
-#: config/ui/breezeconfigurationui.ui:151
-#, kde-format
-msgid "Allow resizing maximized windows from window edges"
-msgstr "विंडो के किनारों से बडे किए गए विंडो का आकार बदलने की अनुमति दें"
-
 #. i18n: ectx: property (text), widget (QCheckBox, outlineCloseButton)
-#: config/ui/breezeconfigurationui.ui:158
+#: config/ui/breezeconfigurationui.ui:118
 #, kde-format
 msgid "Draw a circle around close button"
 msgstr "बंद करने वाले बटन के चारों ओर एक वृत्त बनाएं "
 
+#. i18n: ectx: property (text), widget (QCheckBox, drawBorderOnMaximizedWindows)
+#: config/ui/breezeconfigurationui.ui:125
+#, kde-format
+msgid "Draw border on maximized and tiled windows"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, drawBorderOnMaximizedWindowsHelpLabel)
+#: config/ui/breezeconfigurationui.ui:150
+#, kde-format
+msgid ""
+"This setting will allow you to resize from window edges touching screen "
+"edges. Scrollbars and window close buttons will shift positions and will not "
+"touch screen edges."
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QCheckBox, drawBackgroundGradient)
-#: config/ui/breezeconfigurationui.ui:165
+#: config/ui/breezeconfigurationui.ui:162
 #, kde-format
 msgid "Draw titlebar background gradient"
 msgstr "शीर्षक पट्टी पृष्ठभूमि में ग्रेडिएंट बनाएँ"
 
+#. i18n: ectx: property (text), widget (QCheckBox, roundedCorners)
+#: config/ui/breezeconfigurationui.ui:169
+#, fuzzy, kde-format
+#| msgid "Add handle to resize windows with no border"
+msgid "Round bottom corners of windows with no borders"
+msgstr "बिना सीमारेखा वाली विंडो का आकार बदलने के लिए हैंडल जोड़ें"
+
 #. i18n: ectx: attribute (title), widget (QWidget, tab_4)
-#: config/ui/breezeconfigurationui.ui:173
+#: config/ui/breezeconfigurationui.ui:177
 #, kde-format
-msgid "Shadows"
-msgstr "छायाएँ"
+msgid "Shadows and Outline"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: config/ui/breezeconfigurationui.ui:179
-#, kde-format
-msgid "Si&ze:"
-msgstr "आकार (&z) :"
+#: config/ui/breezeconfigurationui.ui:186
+#, fuzzy, kde-format
+#| msgid "Shadows"
+msgid "Shadow size:"
+msgstr "छायाएँ"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, shadowSize)
-#: config/ui/breezeconfigurationui.ui:193
+#: config/ui/breezeconfigurationui.ui:197
 #, kde-format
 msgctxt "@item:inlistbox Button size:"
 msgid "None"
 msgstr "कुछ नहीं"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: config/ui/breezeconfigurationui.ui:221
-#, kde-format
+#: config/ui/breezeconfigurationui.ui:225
+#, fuzzy, kde-format
+#| msgctxt "strength of the shadow (from transparent to opaque)"
+#| msgid "S&trength:"
 msgctxt "strength of the shadow (from transparent to opaque)"
-msgid "S&trength:"
+msgid "Shadow strength:"
 msgstr "बल : (&t)"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, shadowStrength)
-#: config/ui/breezeconfigurationui.ui:234
+#: config/ui/breezeconfigurationui.ui:235
 #, no-c-format, kde-format
 msgid "%"
 msgstr "%"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: config/ui/breezeconfigurationui.ui:260
+#: config/ui/breezeconfigurationui.ui:248
+#, fuzzy, kde-format
+#| msgid "Shadows"
+msgid "Shadow color:"
+msgstr "छायाएँ"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: config/ui/breezeconfigurationui.ui:258
 #, kde-format
-msgid "Color:"
-msgstr "रंग :"
+msgctxt "outline intensity"
+msgid "Outline intensity:"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, outlineIntensity)
+#: config/ui/breezeconfigurationui.ui:269
+#, kde-format
+msgctxt "@item:inlistbox Outline intensity:"
+msgid "Off"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, outlineIntensity)
+#: config/ui/breezeconfigurationui.ui:274
+#, kde-format
+msgctxt "@item:inlistbox Outline intensity:"
+msgid "Low"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, outlineIntensity)
+#: config/ui/breezeconfigurationui.ui:279
+#, fuzzy, kde-format
+#| msgctxt "@item:inlistbox Button size:"
+#| msgid "Medium"
+msgctxt "@item:inlistbox Outline intensity:"
+msgid "Medium"
+msgstr "मध्यम"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, outlineIntensity)
+#: config/ui/breezeconfigurationui.ui:284
+#, kde-format
+msgctxt "@item:inlistbox Outline intensity:"
+msgid "High"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, outlineIntensity)
+#: config/ui/breezeconfigurationui.ui:289
+#, kde-format
+msgctxt "@item:inlistbox Outline intensity:"
+msgid "Maximum"
+msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
-#: config/ui/breezeconfigurationui.ui:287
+#: config/ui/breezeconfigurationui.ui:298
 #, kde-format
 msgid "Window-Specific Overrides"
 msgstr "विंडो-विशिष्ट अध्यारोहण"
 
-#. i18n: ectx: property (windowTitle), widget (QDialog, BreezeDetectWidget)
 #. i18n: ectx: property (windowTitle), widget (QDialog, BreezeExceptionDialog)
-#: config/ui/breezedetectwidget.ui:14 config/ui/breezeexceptiondialog.ui:14
+#: config/ui/breezeexceptiondialog.ui:14
 #, kde-format
 msgid "Dialog"
 msgstr "संवाद"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: config/ui/breezedetectwidget.ui:20
-#, kde-format
-msgid "Information about Selected Window"
-msgstr "चयनित विंडे के बारे में जानकारी"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: config/ui/breezedetectwidget.ui:26
-#, kde-format
-msgid "Class: "
-msgstr "वर्ग : "
-
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: config/ui/breezedetectwidget.ui:43
-#, kde-format
-msgid "Title: "
-msgstr "शीर्षक : "
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: config/ui/breezedetectwidget.ui:63
-#, kde-format
-msgid "Window Property Selection"
-msgstr "विंडो गुण का चयन"
-
-#. i18n: ectx: property (text), widget (QRadioButton, windowClassCheckBox)
-#: config/ui/breezedetectwidget.ui:69
-#, kde-format
-msgid "Use window class (whole application)"
-msgstr "विंडो वर्ग (संपूर्ण अनुप्रयोग) का उपयोग करें"
-
-#. i18n: ectx: property (text), widget (QRadioButton, windowTitleCheckBox)
-#: config/ui/breezedetectwidget.ui:79
-#, kde-format
-msgid "Use window title"
-msgstr "विंडो शीर्षक का उपयोग करें"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: config/ui/breezeexceptiondialog.ui:20
@@ -292,8 +316,9 @@ msgstr "मिलान करने के लिए रेगुलर एक�
 
 #. i18n: ectx: property (text), widget (QPushButton, detectDialogButton)
 #: config/ui/breezeexceptiondialog.ui:52
-#, kde-format
-msgid "Detect Window Properties"
+#, fuzzy, kde-format
+#| msgid "Detect Window Properties"
+msgid "Detect Window Properties…"
 msgstr "विंडो गुणों का पता लगाएं"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
@@ -400,3 +425,33 @@ msgstr "जोड़ें"
 #, kde-format
 msgid "Edit"
 msgstr "संपादित करें"
+
+#~ msgid "Si&ze:"
+#~ msgstr "आकार (&z) :"
+
+#~ msgid "Color:"
+#~ msgstr "रंग :"
+
+#~ msgid "Information about Selected Window"
+#~ msgstr "चयनित विंडे के बारे में जानकारी"
+
+#~ msgid "Class: "
+#~ msgstr "वर्ग : "
+
+#~ msgid "Title: "
+#~ msgstr "शीर्षक : "
+
+#~ msgid "Window Property Selection"
+#~ msgstr "विंडो गुण का चयन"
+
+#~ msgid "Use window class (whole application)"
+#~ msgstr "विंडो वर्ग (संपूर्ण अनुप्रयोग) का उपयोग करें"
+
+#~ msgid "Use window title"
+#~ msgstr "विंडो शीर्षक का उपयोग करें"
+
+#~ msgid "Allow resizing maximized windows from window edges"
+#~ msgstr "विंडो के किनारों से बडे किए गए विंडो का आकार बदलने की अनुमति दें"
+
+#~ msgid "Draw separator under active window's titlebar"
+#~ msgstr "सक्रिय विंडो के शीर्षक पट्टी के नीचे विभाजक दिखाएँ"

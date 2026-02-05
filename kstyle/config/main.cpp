@@ -14,24 +14,25 @@
 
 #include <KCMultiDialog>
 #include <KLocalizedString>
+#include <KPluginMetaData>
 
 //__________________________________________
 int main(int argc, char *argv[])
 {
     KLocalizedString::setApplicationDomain("breeze_style_config");
 
-    QApplication app( argc, argv );
-    app.setApplicationName( i18n( "Breeze Settings" ) );
-    app.setWindowIcon( QIcon::fromTheme( QStringLiteral( "breeze-settings" ) ) );
+    QApplication app(argc, argv);
+    app.setApplicationName(i18n("Breeze Settings"));
+    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("breeze-settings")));
 
     KCMultiDialog dialog;
-    dialog.setWindowTitle( i18n( "Breeze Settings" ) );
-    dialog.addModule( QStringLiteral( "breezestyleconfig" ) );
-    dialog.addModule( QStringLiteral( "breezedecorationconfig" ) );
+    dialog.setWindowTitle(i18n("Breeze Settings"));
+    dialog.addModule(KPluginMetaData(QStringLiteral("kstyle_config/breezestyleconfig")));
+    dialog.addModule(KPluginMetaData(QStringLiteral("org.kde.kdecoration3.kcm/kcm_breezedecoration.so")));
     dialog.show();
 
-    foreach( auto child, dialog.findChildren<QAbstractScrollArea*>() )
-    {
+    const auto children = dialog.findChildren<QAbstractScrollArea *>();
+    for (auto child : children) {
         child->adjustSize();
         child->viewport()->adjustSize();
     }

@@ -1,23 +1,23 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 #
-# A S Alam <aalam@users.sf.net>, 2015.
+# SPDX-FileCopyrightText: 2015, 2023, 2024 A S Alam <aalam@users.sf.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-31 00:22+0000\n"
-"PO-Revision-Date: 2015-02-01 03:00-0600\n"
-"Last-Translator: A S Alam <aalam@users.sf.net>\n"
-"Language-Team: Punjabi/Panjabi <punjabi-users@list.sf.net>\n"
+"POT-Creation-Date: 2025-11-17 14:41+0000\n"
+"PO-Revision-Date: 2024-01-03 14:21-0600\n"
+"Last-Translator: A S Alam <aalam@punlinux.org>\n"
+"Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
 "Language: pa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 1.5\n"
+"X-Generator: Lokalize 23.08.4\n"
 
-#: main.cpp:24 main.cpp:28
+#: main.cpp:25 main.cpp:29
 #, kde-format
 msgid "Breeze Settings"
 msgstr "ਬਰੀਜ਼ ਸੈਟਿੰਗ"
@@ -26,7 +26,7 @@ msgstr "ਬਰੀਜ਼ ਸੈਟਿੰਗ"
 #: ui/breezestyleconfig.ui:39
 #, kde-format
 msgid "General"
-msgstr ""
+msgstr "ਆਮ"
 
 #. i18n: ectx: property (text), widget (QLabel, _windowDragLabel)
 #: ui/breezestyleconfig.ui:51
@@ -44,25 +44,25 @@ msgstr ""
 #: ui/breezestyleconfig.ui:71
 #, kde-format
 msgid "&Keyboard accelerators visibility:"
-msgstr ""
+msgstr "ਕੀਬੋਰਡ ਐਕਸਲੇਟਰ ਦਿੱਖ(&K):"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:85
 #, kde-format
-msgid "Always Hide Keyboard Accelerators"
-msgstr ""
+msgid "Always hide"
+msgstr "ਹਮੇਸ਼ਾ ਲੁਕਾਓ"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:90
 #, kde-format
-msgid "Show Keyboard Accelerators When Needed"
+msgid "Show when Alt key is pressed"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:95
 #, kde-format
-msgid "Always Show Keyboard Accelerators"
-msgstr ""
+msgid "Always show"
+msgstr "ਹਮੇਸ਼ਾ ਵੇਖਾਓ"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _windowDragMode)
 #: ui/breezestyleconfig.ui:117
@@ -80,7 +80,7 @@ msgstr ""
 #: ui/breezestyleconfig.ui:127
 #, kde-format
 msgid "Drag windows from all empty areas"
-msgstr ""
+msgstr "ਸਭ ਖਾਲੀ ਖੇਤਰ ਤੋਂ ਵਿੰਡੋਜ਼ ਖਿੱਚੋ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, _tabBarDrawCenteredTabs)
 #: ui/breezestyleconfig.ui:148
@@ -92,7 +92,7 @@ msgstr ""
 #: ui/breezestyleconfig.ui:155
 #, kde-format
 msgid "Draw toolbar item separators"
-msgstr ""
+msgstr "ਟੂਲਬਾਰ ਆਈਟਮ ਵੱਖਰੇਵਾਂ ਬਣਾਓ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, _sliderDrawTickMarks)
 #: ui/breezestyleconfig.ui:162
@@ -151,44 +151,66 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:264 ui/breezestyleconfig.ui:283
-#, kde-format
-msgid "No Buttons"
+#, fuzzy, kde-format
+#| msgid "No Buttons"
+msgid "No buttons"
 msgstr "ਕੋਈ ਬਟਨ ਨਹੀਂ"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:269 ui/breezestyleconfig.ui:288
-#, kde-format
-msgid "One Button"
+#, fuzzy, kde-format
+#| msgid "One Button"
+msgid "One button"
 msgstr "ਇੱਕ ਬਟਨ"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:274 ui/breezestyleconfig.ui:293
-#, kde-format
-msgid "Two Buttons"
+#, fuzzy, kde-format
+#| msgid "Two Buttons"
+msgid "Two buttons"
 msgstr "ਦੋ ਬਟਨ"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
 #: ui/breezestyleconfig.ui:315
 #, kde-format
 msgid "Transparency"
-msgstr ""
+msgstr "ਪਾਰਦਰਸ਼ਤਾ"
 
 #. i18n: ectx: property (text), widget (QLabel, _menuOpacityTransparentLabel)
 #: ui/breezestyleconfig.ui:336
 #, kde-format
 msgid "Transparent"
-msgstr ""
+msgstr "ਪਾਰਦਰਸ਼ੀ"
 
 #. i18n: ectx: property (text), widget (QLabel, _menuOpacityOpaqueLabel)
 #: ui/breezestyleconfig.ui:362
 #, kde-format
 msgid "Opaque"
-msgstr ""
+msgstr "ਧੁੰਦਲਾ"
 
 #. i18n: ectx: property (text), widget (QLabel, _menuGroupDescription)
 #: ui/breezestyleconfig.ui:373
 #, kde-format
 msgid "Menu:"
-msgstr ""
+msgstr "ਮੇਨੂ:"
+
+#~ msgid "Animations"
+#~ msgstr "ਐਨੀਮੇਸ਼ਨ"
+
+#, fuzzy
+#~| msgid "Animations"
+#~ msgid "A&nimations duration:"
+#~ msgstr "ਐਨੀਮੇਸ਼ਨ"
+
+#, fuzzy
+#~| msgid "ms"
+#~ msgid " ms"
+#~ msgstr "ms"
+
+#~ msgid "Enable animations"
+#~ msgstr "ਐਨੀਮੇਸ਼ਨ ਸਮਰੱਥ ਕਰੋ"
+
+#~ msgid "Advanced"
+#~ msgstr "ਤਕਨੀਕੀ"

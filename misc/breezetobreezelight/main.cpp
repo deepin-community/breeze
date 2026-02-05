@@ -4,10 +4,10 @@
 
 #include <QDebug>
 
-int main()
+int main(int, char**)
 {
     KConfig globals("kdeglobals");
-    KConfigGroup general(&globals, "General");
+    KConfigGroup general(&globals, QStringLiteral("General"));
     if (general.readEntry("ColorScheme") != QLatin1String("Breeze")) {
         return 0;
     }
@@ -20,4 +20,5 @@ int main()
         auto destination = KConfigGroup(&globals, group);
         KConfigGroup(&breezeLight, group).copyTo(&destination, KConfig::Notify);
     }
+    return 0;
 }

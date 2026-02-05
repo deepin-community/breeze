@@ -3,10 +3,16 @@
  *
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
-#ifndef breeze_animationdata_h
-#define breeze_animationdata_h
+
+#pragma once
+
+#include "config-breeze.h"
 
 #include "breezeanimation.h"
+
+#if BREEZE_HAVE_QTQUICK
+#include <QQuickItem>
+#endif
 
 #include <QEvent>
 #include <QObject>
@@ -16,72 +22,87 @@
 
 namespace Breeze
 {
+//* base class
+class AnimationData : public QObject
+{
+    Q_OBJECT
 
-    //* base class
-    class AnimationData: public QObject
+public:
+    //* constructor
+    AnimationData(QObject *parent, QObject *target)
+        : QObject(parent)
+        , _target(target)
     {
+    }
 
-        Q_OBJECT
+    //* duration
+    virtual void setDuration(int) = 0;
 
-        public:
+    //* steps
+    static void setSteps(int value)
+    {
+        _steps = value;
+    }
 
-        //* constructor
-        AnimationData( QObject* parent, QWidget* target ):
-            QObject( parent ),
-            _target( target )
-        {}
+    //* enability
+    [[nodiscard]] virtual bool enabled() const
+    {
+        return _enabled;
+    }
 
-        //* duration
-        virtual void setDuration( int ) = 0;
+    //* enability
+    virtual void setEnabled(bool value)
+    {
+        _enabled = value;
+    }
 
-        //* steps
-        static void setSteps( int value )
-        { _steps = value; }
+    //* target
+    [[nodiscard]] const WeakPointer<QObject> &target() const
+    {
+        return _target;
+    }
 
-        //* enability
-        virtual bool enabled() const
-        { return _enabled; }
+    //* invalid opacity
+    static const qreal OpacityInvalid;
 
-        //* enability
-        virtual void setEnabled( bool value )
-        { _enabled = value; }
+protected:
+    //* setup animation
+    virtual void setupAnimation(const Animation::Pointer &animation, const QByteArray &property);
 
-        //* target
-        const WeakPointer<QWidget>& target() const
-        { return _target; }
-
-        //* invalid opacity
-        static const qreal OpacityInvalid;
-
-        protected:
-
-        //* setup animation
-        virtual void setupAnimation( const Animation::Pointer& animation, const QByteArray& property );
-
-        //* apply step
-        virtual qreal digitize( const qreal& value ) const
-        {
-            if( _steps > 0 ) return std::floor( value*_steps )/_steps;
-            else return value;
+    //* apply step
+    virtual qreal digitize(const qreal &value) const
+    {
+        if (_steps > 0) {
+            return std::floor(value * _steps) / _steps;
+        } else {
+            return value;
         }
+    }
 
-        //* trigger target update
-        virtual void setDirty() const
-        { if( _target ) _target.data()->update(); }
+    //* trigger target update
+    virtual void setDirty() const
+    {
+        if (auto widget = qobject_cast<QWidget *>(_target)) {
+            widget->update();
+        }
+#if BREEZE_HAVE_QTQUICK
+        else if (auto item = qobject_cast<QQuickItem *>(_target)) {
+            // Note: Calling polish() instead of update() because that's where
+            // Breeze would repaint its image for texture.
+            item->polish();
+        }
+#endif
+    }
 
-        private:
+private:
+    //* guarded target
+    WeakPointer<QObject> _target;
 
-        //* guarded target
-        WeakPointer<QWidget> _target;
+    //* enability
+    bool _enabled = true;
 
-        //* enability
-        bool _enabled = true;
-
-        //* steps
-        static int _steps;
-
-    };
+    //* steps
+    static int _steps;
+};
 
 }
-
-#endif

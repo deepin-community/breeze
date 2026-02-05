@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-# Martin Schlander <mschlander@opensuse.org>, 2014, 2015, 2017, 2018.
+# Martin Schlander <mschlander@opensuse.org>, 2014, 2015, 2017, 2018, 2022.
 # scootergrisen, 2017.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-31 00:22+0000\n"
-"PO-Revision-Date: 2018-07-12 10:29+0100\n"
+"POT-Creation-Date: 2025-11-17 14:41+0000\n"
+"PO-Revision-Date: 2022-08-08 17:40+0200\n"
 "Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
 "Language-Team: Danish <kde-i18n-doc@kde.org>\n"
 "Language: da\n"
@@ -15,9 +15,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 21.12.3\n"
 
-#: main.cpp:24 main.cpp:28
+#: main.cpp:25 main.cpp:29
 #, kde-format
 msgid "Breeze Settings"
 msgstr "Breeze-indstillinger"
@@ -49,20 +49,20 @@ msgstr "&Synlighed af tastaturgenveje:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:85
 #, kde-format
-msgid "Always Hide Keyboard Accelerators"
-msgstr "Skjul altid tastaturgenveje"
+msgid "Always hide"
+msgstr "Skjul altid"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:90
 #, kde-format
-msgid "Show Keyboard Accelerators When Needed"
-msgstr "Vis tastaturgenveje når nødvendigt"
+msgid "Show when Alt key is pressed"
+msgstr "Vis når Alt-knappen holdes nede"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:95
 #, kde-format
-msgid "Always Show Keyboard Accelerators"
-msgstr "Vis altid tastaturgenveje"
+msgid "Always show"
+msgstr "Vis altid"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _windowDragMode)
 #: ui/breezestyleconfig.ui:117
@@ -151,22 +151,25 @@ msgstr "&Knaptype for toppil:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:264 ui/breezestyleconfig.ui:283
-#, kde-format
-msgid "No Buttons"
+#, fuzzy, kde-format
+#| msgid "No Buttons"
+msgid "No buttons"
 msgstr "Ingen knapper"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:269 ui/breezestyleconfig.ui:288
-#, kde-format
-msgid "One Button"
+#, fuzzy, kde-format
+#| msgid "One Button"
+msgid "One button"
 msgstr "En knap"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:274 ui/breezestyleconfig.ui:293
-#, kde-format
-msgid "Two Buttons"
+#, fuzzy, kde-format
+#| msgid "Two Buttons"
+msgid "Two buttons"
 msgstr "To knapper"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
@@ -192,3 +195,27 @@ msgstr "Ugennemsigtig"
 #, kde-format
 msgid "Menu:"
 msgstr "Menu:"
+
+#~ msgid "Always Hide Keyboard Accelerators"
+#~ msgstr "Skjul altid tastaturgenveje"
+
+#~ msgid "Show Keyboard Accelerators When Needed"
+#~ msgstr "Vis tastaturgenveje når nødvendigt"
+
+#~ msgid "Always Show Keyboard Accelerators"
+#~ msgstr "Vis altid tastaturgenveje"
+
+#~ msgid "Draw frame around page titles"
+#~ msgstr "Tegn ramme omkring sidetitler"
+
+#~ msgid "Animations"
+#~ msgstr "Animationer"
+
+#~ msgid "A&nimations duration:"
+#~ msgstr "A&nimationsvarighed:"
+
+#~ msgid " ms"
+#~ msgstr " ms"
+
+#~ msgid "Enable animations"
+#~ msgstr "Aktivér animationer"

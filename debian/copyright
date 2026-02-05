@@ -4,16 +4,145 @@ Upstream-Name: breeze
 Source: https://invent.kde.org/plasma/breeze
 
 Files: *
-Copyright: 2015, David Edmundson <davidedmundson@kde.org>
-           1989-1991, Free Software Foundation, Inc
-           2014, Hugo Pereira Da Costa <hugo.pereira@free.fr>
-           2014, Jonathan Riddell <jriddell@ubuntu.com>
-           2014, Marco Martin <mart@kde.org>
-           2004-2008, Free Software Foundation, Inc
-           2007, Free Software Foundation, Inc. <http://fsf.org/>
-           2014, Rosetta Contributors and Canonical Ltd 2014
-           2007-2015, This_file_is_part_of_KDE
-License: GPL-2+
+Copyright: 2014, Hugo Pereira Da Costa <hugo.pereira@free.fr>
+           2023, ivan tkachenko <me@ratijas.tk>
+           2024, Jin Liu <m.liu.jin@gmail.com>
+           2020-2021, Noah Davis <noahadvs@gmail.com>
+           2016, The Qt Company Ltd.
+           2018-2020, Vlad Zahorodnii <vlad.zahorodnii@kde.org>
+License: GPL-2.0-or-later
+
+Files: po/*
+Copyright: 2015-2024, A S Alam <aalam@users.sf.net>
+           2024, Adrián Chaves (Gallaecio)
+           2018-2025, Alexander Yavorsky <kekcuha@gmail.com>
+           2014-2021, Burkhard Lück <lueck@hube-lueck.de>
+           2014-2025, Eloy Cuadra <ecuadra@eloihr.net>
+           2022-2025, Emir SARI <emir_sari@icloud.com>
+           2023, Enol P. <enolp@softastur.org>
+           2022-2025, Frank Steinmetzger <dev-kde@felsenfleischer.de>
+           2014-2022, Frederik Schwarzer <schwarzer@kde.org>
+           2014-2025, Freek de Kruijf <freekdekruijf@kde.nl>
+           2023-2025, Geraldo Simiao <geraldosimiao@fedoraproject.org>
+           2016-2024, Giovanni Sora <g.sora@tiscali.it>
+           2025, Guilherme Marçal Silva <guimarcalsilva@gmail.com>
+           2022-2025, gummi <gudmundure@gmail.com>
+           2023, Jannick Kuhr <opensource@kuhr.org>
+           2024, Johannes Obermayr <johannesobermayr@gmx.de>
+           2014-2025, Josep M. Ferrer <txemaq@gmail.com>
+           2024, kali <skkalwar999@gmail.com>
+           2024-2025, KDE euskaratzeko proiektuaren arduraduna <xalba@ni.eus>
+           2022-2025, Kisaragi Hiu <mail@kisaragi-hiu.com>
+           2022-2024, Kishore G <kishore96@gmail.com>
+           2022-2025, Kristof Kiszel <ulysses@fsf.hu>
+           2022-2025, Mincho Kondarev <mkondarev@yahoo.de>
+           2022-2024, Olesya Gerasimenko <translation-team@basealt.ru>
+           2007-2025, Shinjo Park <kde@peremen.name>
+           2014-2025, Stefan Asserhäll <stefan.asserhall@gmail.com>
+           2014-2024, Steve Allewell <steve.allewell@gmail.com>
+           2009-2025, Tommi Nieminen <translator@legisign.org>
+           2024, Toms Trasuns <toms.trasuns@posteo.net>
+           2014-2025, Vincenzo Reale <smart2128vr@gmail.com>
+           2013-2025, Xavier Besnard <xavier.besnard@kde.org>
+           2023-2025, Yaron Shahrabani <sh.yaron@gmail.com>
+           2025, Yuma Kakei <yumasansansan@gmail.com>
+           2021-2025, Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+           2014-2025, Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
+License: GPL-2.0-or-later
+
+Files: cursors/*
+       wallpapers/*
+Copyright: 2014 Uri Herrera <kaisergreymon99@gmail.com> and others
+License: LGPL-3.0-or-later
+ This library is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License as
+ published by the Free Software Foundation; either version 3 of the
+ License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library. If not, see
+ <http://www.gnu.org/licenses/>.
+ .
+ Clarification:
+ .
+ The GNU Lesser General Public License or LGPL is written for
+ software libraries in the first place. We expressly want the LGPL to
+ be valid for this artwork library too.
+ .
+ KDE Breeze theme icons is a special kind of software library, it is
+ an artwork library, it's elements can be used in a Graphical User
+ Interface, or GUI.
+ .
+ Source code, for this library means:
+  - where they exist, SVG;
+  - otherwise, if applicable, the multi-layered formats xcf or psd,
+    or otherwise png.
+ .
+ The LGPL in some sections obliges you to make the files carry
+ notices. With images this is in some cases impossible or hardly
+ useful.
+ .
+ With this library a notice is placed at a prominent place in the
+ directory containing the elements. You may follow this practice.
+ .
+ The exception in section 5 of the GNU Lesser General Public License
+ covers the use of elements of this art library in a GUI.
+ .
+ On Debian systems, the complete text of the GNU Lesser General
+ Public License version 3 can be found in
+ `/usr/share/common-licenses/LGPL-3’.
+
+Files: kdecoration/breezebutton.cpp
+       kdecoration/breezebutton.h
+       kdecoration/breezedecoration.cpp
+       kdecoration/breezedecoration.h
+       kdecoration/breeze.h
+       kdecoration/breezesettingsprovider.cpp
+       kdecoration/breezesettingsprovider.h
+Copyright: 2014, Hugo Pereira Da Costa <hugo.pereira@free.fr>
+           2014, Martin Gräßlin <mgraesslin@kde.org>
+           2021, Paul McAuley <kde@paulmcauley.com>
+           2018, Vlad Zahorodnii <vlad.zahorodnii@kde.org>
+License: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
+
+Files: kstyle/animations/breezeheaderviewdata.cpp
+       kstyle/animations/breezetabbardata.cpp
+       kstyle/breezewindowmanager.cpp
+Copyright: 2009-2014, Hugo Pereira Da Costa <hugo.pereira@free.fr>
+           2007, Thomas Luebking <thomas.luebking@web.de>
+License: GPL-2.0-or-later OR MIT
+
+Files: colors/BreezeDark.colors
+       colors/BreezeLight.colors
+Copyright: Andrew Lake <jamboarder@gmail.com>
+           David Redondo <kde@david-redondo.de>
+           Marco Martin <notmart@gmail.com>
+           Nate Graham <nate@kde.org>
+           Neal Gompa <ngompa@kde.org>
+           Noah Davis <noahadvs@gmail.com>
+           Thomas Duckworth <tduck973564@gmail.com>
+License: LGPL-2.0-or-later
+
+Files: po/ca/*.po
+       po/ca@valencia/*.po
+       po/uk/*.po
+Copyright: 2014-2022, Antoni Bella Pérez <antonibella5@yahoo.com>
+           2019, Empar Montoro Martín <montoro_mde@gva.es>
+           2014-2025, Josep M. Ferrer <txemaq@gmail.com>
+           2014-2024, Yuri Chornoivan <yurchor@ukr.net>
+License: LGPL-2.1-only OR LGPL-3.0-only OR LicenseRef-KDE-Accepted-LGPL
+
+Files: kstyle/breezestyle.cpp
+Copyright: 2014, Hugo Pereira Da Costa <hugo.pereira@free.fr>
+           2023, ivan tkachenko <me@ratijas.tk>
+           2021, Noah Davis <noahadvs@gmail.com>
+           2016, The Qt Company Ltd.
+License: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
 
 Files: kdecoration/breezeexceptionlist.cpp
        kdecoration/breezeexceptionlist.h
@@ -30,191 +159,178 @@ Files: kdecoration/breezeexceptionlist.cpp
        kdecoration/config/breezeitemmodel.cpp
        kdecoration/config/breezeitemmodel.h
        kdecoration/config/breezelistmodel.h
+       kstyle/animations/breezestackedwidgetdata.cpp
+       kstyle/animations/breezestackedwidgetdata.h
+       kstyle/animations/breezestackedwidgetengine.cpp
+       kstyle/animations/breezestackedwidgetengine.h
+       kstyle/animations/breezetransitiondata.cpp
+       kstyle/animations/breezetransitiondata.h
+       kstyle/animations/breezetransitionwidget.cpp
+       kstyle/animations/breezetransitionwidget.h
+       kstyle/breezeblurhelper.cpp
+       kstyle/breezeblurhelper.h
        kstyle/config/main.cpp
-Copyright: 2009-2010, Hugo Pereira Da Costa <hugo.pereira@free.fr>
-           2001, Karol Szwed <gallium@kde.org>
-           2004-2008, Lubos Lunak <l.lunak@kde.org>
-License: Expat
-
-Files: kdecoration/breeze.h
-       kdecoration/breezebutton.cpp
-       kdecoration/breezebutton.h
-       kdecoration/breezedecoration.cpp
-       kdecoration/breezedecoration.h
-       kdecoration/breezesettingsprovider.cpp
-       kdecoration/breezesettingsprovider.h
-Copyright: 2014, Hugo Pereira Da Costa <hugo.pereira@free.fr>
-           2014, Martin Gräßlin <mgraesslin@kde.org>
-License: GPL-2+3+KDEeV
-
-Files: po/ca/breeze_kwin_deco.po
-       po/ca/breeze_style_config.po
-       po/uk/breeze_kwin_deco.po
-       po/uk/breeze_style_config.po
-Copyright: 2014-2015, This_file_is_part_of_KDE
-License: LGPL-2.1+3+KDEeV
-
-Files: kstyle/animations/breezeheaderviewdata.cpp
-       kstyle/animations/breezetabbardata.cpp
-       kstyle/breezewindowmanager.cpp
-Copyright: 2009-2014, Hugo Pereira Da Costa <hugo.pereira@free.fr>
+Copyright: 2018, Alex Nemeth <alex.nemeth329@gmail.com>
+           2009-2010, Hugo Pereira Da Costa <hugo.pereira@free.fr>
+           2004, Lubos Lunak <l.lunak@kde.org>
            2007, Thomas Luebking <thomas.luebking@web.de>
-License: Expat_and_GPL-2+
-
-Files: cursors/*
-       wallpapers/*
-Copyright: 2014 Uri Herrera <kaisergreymon99@gmail.com> and others
-Comment: Some svg files have outdated license information (CC-BY-SA) in
- their metadata. They are actually licensed under LGPL-3+.
- This has been fixed in the upstream Git repository.
- See https://github.com/NitruxSA/plasma-next-icons/commit/b5e64d628df06687d2cec7424b466a15274e52ed
-License: LGPL-3+
- This library is free software; you can redistribute it and/or
- modify it under the terms of the GNU Lesser General Public
- License as published by the Free Software Foundation; either
- version 3 of the License, or (at your option) any later version.
- .
- This library is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- Lesser General Public License for more details.
- .
- You should have received a copy of the GNU Lesser General Public
- License along with this library. If not, see <http://www.gnu.org/licenses/>.
- .
- Clarification:
- .
- The GNU Lesser General Public License or LGPL is written for
- software libraries in the first place. We expressly want the LGPL to
- be valid for this artwork library too.
- .
- KDE Breeze theme icons is a special kind of software library, it is an
- artwork library, it's elements can be used in a Graphical User Interface, or
- GUI.
- .
- Source code, for this library means:
-  - where they exist, SVG;
-  - otherwise, if applicable, the multi-layered formats xcf or psd, or
- otherwise png.
- .
- The LGPL in some sections obliges you to make the files carry
- notices. With images this is in some cases impossible or hardly useful.
- .
- With this library a notice is placed at a prominent place in the directory
- containing the elements. You may follow this practice.
- .
- The exception in section 5 of the GNU Lesser General Public License covers
- the use of elements of this art library in a GUI.
- .
- On Debian systems, the complete text of the  GNU Lesser General Public
- License version 3 can be found in "/usr/share/common-licenses/LGPL-3".
+License: MIT
 
 Files: debian/*
-Copyright: 2014, Jonathan Riddell <jriddell@ubuntu.com>
-           2014, Scarlett Clark <scarlett@scarlettgatelyclark.com>
+Copyright: 2025, Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+           2014, Jonathan Riddell <jriddell@ubuntu.com>
            2022, Patrick Franz <deltaone@debian.org>
-License: GPL-2+
+           2014, Scarlett Clark <scarlett@scarlettgatelyclark.com>
+License: GPL-2.0-or-later
 
-License: Expat
- Permission is hereby granted, free of charge, to any person obtaining a copy
- of this software and associated documentation files (the "Software"), to
- deal in the Software without restriction, including without limitation the
- rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
- sell copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
- .
- The above copyright notice and this permission notice shall be included in
- all copies or substantial portions of the Software.
- .
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
- FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
- IN THE SOFTWARE.
-
-License: GPL-2+
- This package is free software; you can redistribute it and/or modify
+License: GPL-2.0-only
+ This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
+ the Free Software Foundation; version 2.
  .
- This package is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ General Public License for more details.
  .
- You should have received a copy of the GNU General Public License
- along with this program. If not, see <http://www.gnu.org/licenses/>
- -
- On Debian systems, the complete text of the GNU General Public License
- version 2 can be found in `/usr/share/common-licenses/GPL-2'.
+ On Debian systems, the complete text of the GNU General Public
+ License version 2 can be found in
+ `/usr/share/common-licenses/GPL-2’.
 
-License: GPL-2+3+KDEeV
- This program is free software; you can redistribute it and/or
- modify it under the terms of the GNU General Public License as
- published by the Free Software Foundation; either version 2 of
- the License or (at your option) version 3 or any later version
- accepted by the membership of KDE e.V. (or its successor approved
- by the membership of KDE e.V.), which shall act as a proxy
- defined in Section 14 of version 3 of the license.
- .
- This program is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
- .
- You should have received a copy of the GNU General Public License
- along with this program.  If not, see <http://www.gnu.org/licenses/>.
- -
- On Debian systems, the complete text of the GNU General Public License
- version 2 can be found in `/usr/share/common-licenses/GPL-2', likewise, the
- complete text of the GNU General Public License version 3 can be found in
- `/usr/share/common-licenses/GPL-3'.
-
-License: LGPL-2.1+3+KDEeV
- This file is distributed under the license LGPL version 2.1 or
- version 3 or later versions approved by the membership of KDE e.V.
- -
- On Debian systems, the complete text of the GNU Lesser General Public License
- version 2.1 can be found in `/usr/share/common-licenses/LGPL-2.1', likewise,
- the complete text of the GNU Lesser General Public License version 3 can be
- found in `/usr/share/common-licenses/LGPL-3'.
-
-License: Expat_and_GPL-2+
+License: GPL-2.0-or-later
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
  the Free Software Foundation; either version 2 of the License, or
  (at your option) any later version.
  .
- This program is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ General Public License for more details.
+ .
+ On Debian systems, the complete text of the GNU General Public
+ License version 2 can be found in
+ `/usr/share/common-licenses/GPL-2’.
+
+License: GPL-3.0-only
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GPL License as published by the Free
+ Software Foundation, version 3.
+ .
+ This package is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ General Public License for more details.
  .
  You should have received a copy of the GNU General Public License
- along with this program; if not, write to the
- Free Software Foundation, Inc.,
- 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .
- ---
- Permission is hereby granted, free of charge, to any person obtaining a copy
- of this software and associated documentation files (the "Software"), to
- deal in the Software without restriction, including without limitation the
- rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
- sell copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
+ along with this program. If not, see <http://www.gnu.org/licenses/>.
  .
- The above copyright notice and this permission notice shall be included in
- all copies or substantial portions of the Software.
+ On Debian systems, the complete text of the GNU General Public
+ License version 3 can be found in
+ `/usr/share/common-licenses/GPL-3’.
+
+License: LGPL-2.0-or-later
+ This library is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Library General Public License as
+ published by the Free Software Foundation; either version 2 of the
+ License, or (at your option)  any later version.
  .
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
- FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
- IN THE SOFTWARE.
- -
- On Debian systems, the complete text of the GNU General Public License
- version 2 can be found in `/usr/share/common-licenses/GPL-2'.
+ This library is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Library General Public License for more details.
+ .
+ On Debian systems, the complete text of the GNU Library General
+ Public License version 2 can be found in
+ `/usr/share/common-licenses/LGPL-2’.
+
+License: LGPL-2.1-only
+ This library is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License version
+ 2.1 as published by the Free Software Foundation.
+ .
+ This library is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ On Debian systems, the complete text of the GNU Lesser General
+ Public License version 2.1 can be found in
+ `/usr/share/common-licenses/LGPL-2.1’.
+
+License: LGPL-3.0-only
+ This library is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License version
+ 3 as published by the Free Software Foundation.
+ .
+ This library is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library.  If not, see
+ <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU Lesser General
+ Public License version 3 can be found in
+ `/usr/share/common-licenses/LGPL-3’.
+
+License: LicenseRef-KDE-Accepted-GPL
+ This library is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3 of the license or (at
+ your option) at any later version that is accepted by the membership
+ of KDE e.V. (or its successor approved by the membership of KDE
+ e.V.), which shall act as a proxy as defined in Section 14 of
+ version 3 of the license.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ General Public License for more details.
+
+License: LicenseRef-KDE-Accepted-LGPL
+ This library is free software; you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License as
+ published by the Free Software Foundation; either version 3 of the
+ license or (at your option) any later version that is accepted by
+ the membership of KDE e.V. (or its successor approved by the
+ membership of KDE e.V.), which shall act as a proxy as defined in
+ Section 6 of version 3 of the license.
+ .
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ General Public License for more details.
+
+License: LicenseRef-Qt-Commercial
+ Commercial License Usage
+ Licensees holding valid commercial Qt licenses may use this file in
+ accordance with the commercial license agreement provided with the
+ Software or, alternatively, in accordance with the terms contained
+ in a written agreement between you and The Qt Company. For licensing
+ terms and conditions see https://www.qt.io/terms-conditions. For
+ further information use the contact form at
+ https://www.qt.io/contact-us.
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person
+ obtaining a copy of this software and associated documentation files
+ (the "Software"), to deal in the Software without restriction,
+ including without limitation the rights to use, copy, modify, merge,
+ publish, distribute, sublicense, and/or sell copies of the Software,
+ and to permit persons to whom the Software is furnished to do so,
+ subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be
+ included in all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+ BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+ ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
