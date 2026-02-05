@@ -1,15 +1,9 @@
-# Copyright (C) YEAR This_file_is_part_of_KDE
-# This file is distributed under the same license as the PACKAGE package.
-#
-# Xuetian Weng <xweng@cs.stonybrook.edu>, 2014.
-# Weng Xuetian <wengxt@gmail.com>, 2014, 2015.
-# Guo Yunhe <guoyunhebrave@gmail.com>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-31 00:22+0000\n"
-"PO-Revision-Date: 2022-03-05 15:06\n"
+"POT-Creation-Date: 2025-11-17 14:41+0000\n"
+"PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -20,10 +14,10 @@ msgstr ""
 "X-Crowdin-Project: kdeorg\n"
 "X-Crowdin-Project-ID: 269464\n"
 "X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: /kf5-stable/messages/breeze/breeze_style_config.pot\n"
-"X-Crowdin-File-ID: 2387\n"
+"X-Crowdin-File: /kf6-stable/messages/breeze/breeze_style_config.pot\n"
+"X-Crowdin-File-ID: 52556\n"
 
-#: main.cpp:24 main.cpp:28
+#: main.cpp:25 main.cpp:29
 #, kde-format
 msgid "Breeze Settings"
 msgstr "Breeze 微风设置"
@@ -55,20 +49,20 @@ msgstr "键盘快捷键可见性(&K)："
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:85
 #, kde-format
-msgid "Always Hide Keyboard Accelerators"
-msgstr "总是隐藏键盘快捷键"
+msgid "Always hide"
+msgstr "总是隐藏"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:90
 #, kde-format
-msgid "Show Keyboard Accelerators When Needed"
-msgstr "在需要时显示键盘快捷键"
+msgid "Show when Alt key is pressed"
+msgstr "按下 Alt 键时显示"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:95
 #, kde-format
-msgid "Always Show Keyboard Accelerators"
-msgstr "总是显示键盘快捷键"
+msgid "Always show"
+msgstr "总是显示"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _windowDragMode)
 #: ui/breezestyleconfig.ui:117
@@ -98,7 +92,7 @@ msgstr "居中标签页栏的标签页"
 #: ui/breezestyleconfig.ui:155
 #, kde-format
 msgid "Draw toolbar item separators"
-msgstr "绘制工具栏项目分隔符"
+msgstr "绘制工具栏项目分隔线"
 
 #. i18n: ectx: property (text), widget (QCheckBox, _sliderDrawTickMarks)
 #: ui/breezestyleconfig.ui:162
@@ -158,21 +152,21 @@ msgstr "顶部箭头按钮类型(&T)："
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:264 ui/breezestyleconfig.ui:283
 #, kde-format
-msgid "No Buttons"
+msgid "No buttons"
 msgstr "无按钮"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:269 ui/breezestyleconfig.ui:288
 #, kde-format
-msgid "One Button"
+msgid "One button"
 msgstr "一个按钮"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:274 ui/breezestyleconfig.ui:293
 #, kde-format
-msgid "Two Buttons"
+msgid "Two buttons"
 msgstr "两个按钮"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)

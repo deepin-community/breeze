@@ -1,14 +1,14 @@
-#ifndef breezesettingsprovider_h
-#define breezesettingsprovider_h
 /*
  * SPDX-FileCopyrightText: 2014 Hugo Pereira Da Costa <hugo.pereira@free.fr>
  *
  * SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
  */
 
+#pragma once
+
+#include "breeze.h"
 #include "breezedecoration.h"
 #include "breezesettings.h"
-#include "breeze.h"
 
 #include <KSharedConfig>
 
@@ -16,47 +16,40 @@
 
 namespace Breeze
 {
+class SettingsProvider : public QObject
+{
+    Q_OBJECT
 
-    class SettingsProvider: public QObject
-    {
+public:
+    //* destructor
+    ~SettingsProvider();
 
-        Q_OBJECT
+    //* singleton
+    static SettingsProvider *self();
 
-        public:
+    //* internal settings for given decoration
+    InternalSettingsPtr internalSettings(Decoration *) const;
 
-        //* destructor
-        ~SettingsProvider();
+public Q_SLOTS:
 
-        //* singleton
-        static SettingsProvider *self();
+    //* reconfigure
+    void reconfigure();
 
-        //* internal settings for given decoration
-        InternalSettingsPtr internalSettings(Decoration *) const;
+private:
+    //* constructor
+    SettingsProvider();
 
-        public Q_SLOTS:
+    //* default configuration
+    InternalSettingsPtr m_defaultSettings;
 
-        //* reconfigure
-        void reconfigure();
+    //* exceptions
+    InternalSettingsList m_exceptions;
 
-        private:
+    //* config object
+    KSharedConfigPtr m_config;
 
-        //* constructor
-        SettingsProvider();
-
-        //* default configuration
-        InternalSettingsPtr m_defaultSettings;
-
-        //* exceptions
-        InternalSettingsList m_exceptions;
-
-        //* config object
-        KSharedConfigPtr m_config;
-
-        //* singleton
-        static SettingsProvider *s_self;
-
-    };
+    //* singleton
+    static SettingsProvider *s_self;
+};
 
 }
-
-#endif

@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
 # Lasse Liehu <lasse.liehu@gmail.com>, 2014, 2015, 2017.
-# Tommi Nieminen <translator@legisign.org>, 2016, 2018, 2022.
+# SPDX-FileCopyrightText: 2016, 2018, 2022, 2024 Tommi Nieminen <translator@legisign.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-31 00:22+0000\n"
-"PO-Revision-Date: 2018-02-23 19:34+0200\n"
+"POT-Creation-Date: 2025-11-17 14:41+0000\n"
+"PO-Revision-Date: 2024-10-17 18:11+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -16,9 +16,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 20.04.2\n"
+"X-Generator: Lokalize 23.08.5\n"
 
-#: main.cpp:24 main.cpp:28
+#: main.cpp:25 main.cpp:29
 #, kde-format
 msgid "Breeze Settings"
 msgstr "Breezen asetukset"
@@ -51,19 +51,19 @@ msgstr "&Valintanäppäinten näyttäminen:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:85
 #, kde-format
-msgid "Always Hide Keyboard Accelerators"
+msgid "Always hide"
 msgstr "Piilota aina"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:90
 #, kde-format
-msgid "Show Keyboard Accelerators When Needed"
-msgstr "Näytä tarvittaessa"
+msgid "Show when Alt key is pressed"
+msgstr "Näytä Alt-näppäintä painettaessa"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:95
 #, kde-format
-msgid "Always Show Keyboard Accelerators"
+msgid "Always show"
 msgstr "Näytä aina"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _windowDragMode)
@@ -156,21 +156,21 @@ msgstr "&Yläpään nuolipainikkeet:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:264 ui/breezestyleconfig.ui:283
 #, kde-format
-msgid "No Buttons"
+msgid "No buttons"
 msgstr "Ei painikkeita"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:269 ui/breezestyleconfig.ui:288
 #, kde-format
-msgid "One Button"
+msgid "One button"
 msgstr "Yksi painike"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:274 ui/breezestyleconfig.ui:293
 #, kde-format
-msgid "Two Buttons"
+msgid "Two buttons"
 msgstr "Kaksi painiketta"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
@@ -196,3 +196,54 @@ msgstr "Peittävä"
 #, kde-format
 msgid "Menu:"
 msgstr "Valikko:"
+
+#~ msgid "Always Hide Keyboard Accelerators"
+#~ msgstr "Piilota aina"
+
+#~ msgid "Show Keyboard Accelerators When Needed"
+#~ msgstr "Näytä tarvittaessa"
+
+#~ msgid "Always Show Keyboard Accelerators"
+#~ msgstr "Näytä aina"
+
+#~ msgid "Draw frame around page titles"
+#~ msgstr "Piirrä kehys sivuotsikoiden ympärille"
+
+#~ msgid "Animations"
+#~ msgstr "Animoinnit"
+
+#~ msgid "A&nimations duration:"
+#~ msgstr "&Animointien kesto:"
+
+#~ msgid " ms"
+#~ msgstr " ms"
+
+#~ msgid "Enable animations"
+#~ msgstr "Käytä animointeja"
+
+#~ msgid "Advanced"
+#~ msgstr "Lisäasetukset"
+
+#~ msgid "Widget Style"
+#~ msgstr "Elementtien tyyli"
+
+#~ msgid "Modify the appearance of widgets"
+#~ msgstr "Muuta elementtien ulkoasua"
+
+#~ msgid "Window Decorations"
+#~ msgstr "Ikkunoiden kehykset"
+
+#~ msgid "Modify the appearance of window decorations"
+#~ msgstr "Muuta ikkunoiden kehysten ulkoasua"
+
+#~ msgid "Unable to find breeze style configuration plugin"
+#~ msgstr "Breeze-tyylin asetusliitännäistä ei löytynyt"
+
+#~ msgid "Unable to find breeze decoration configuration plugin"
+#~ msgstr "Breeze-kehyksen asetusliitännäistä ei löydy"
+
+#~ msgid "Dialog"
+#~ msgstr "Ikkuna"
+
+#~ msgid "Form"
+#~ msgstr "Lomake"
