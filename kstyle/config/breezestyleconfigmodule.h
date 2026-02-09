@@ -4,8 +4,7 @@
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-#ifndef breezestyleconfigmodule_h
-#define breezestyleconfigmodule_h
+#pragma once
 
 #include "breezestyleconfig.h"
 
@@ -13,29 +12,27 @@
 
 namespace Breeze
 {
+//* configuration module
+class ConfigurationModule : public KCModule
+{
+    Q_OBJECT
 
-    //* configuration module
-    class ConfigurationModule: public KCModule
-    {
+public:
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+    ConfigurationModule(QObject *parent, const KPluginMetaData &data);
+#else
+    ConfigurationModule(QWidget *parent, const QVariantList &args);
+#endif
 
-        Q_OBJECT
+public Q_SLOTS:
 
-        public:
-        ConfigurationModule(QWidget *parent, const QVariantList &args);
+    void defaults() override;
+    void load() override;
+    void save() override;
 
-        public Q_SLOTS:
-
-        void defaults() override;
-        void load() override;
-        void save() override;
-
-        private:
-
-        //* configuration
-        StyleConfig* m_config;
-
-    };
+private:
+    //* configuration
+    StyleConfig *m_config;
+};
 
 }
-
-#endif

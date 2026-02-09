@@ -3,22 +3,23 @@
 #
 # Kristóf Kiszel <ulysses@kubuntu.org>, 2014, 2015.
 # Kiszel Kristóf <kiszel.kristof@gmail.com>, 2017, 2018.
+# SPDX-FileCopyrightText: 2022, 2024 Kristof Kiszel <ulysses@fsf.hu>
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-31 00:22+0000\n"
-"PO-Revision-Date: 2018-10-19 17:14+0200\n"
-"Last-Translator: Kristof Kiszel <kiszel.kristof@gmail.com>\n"
+"POT-Creation-Date: 2024-08-29 00:40+0000\n"
+"PO-Revision-Date: 2024-09-19 14:30+0200\n"
+"Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 24.08.0\n"
 
-#: main.cpp:24 main.cpp:28
+#: main.cpp:25 main.cpp:29
 #, kde-format
 msgid "Breeze Settings"
 msgstr "Breeze beállítások"
@@ -50,20 +51,20 @@ msgstr "&Billentyűzetgyorsítók láthatósága:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:85
 #, kde-format
-msgid "Always Hide Keyboard Accelerators"
-msgstr "Mindig rejtse el a billentyűzetgyorsítókat"
+msgid "Always hide"
+msgstr "Mindig rejtse el"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:90
 #, kde-format
-msgid "Show Keyboard Accelerators When Needed"
-msgstr "Akkor jelenítse meg a billentyűzetgyorsítókat, ha szükséges"
+msgid "Show when Alt key is pressed"
+msgstr "Megjelenítés az Alt megnyomásakor"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:95
 #, kde-format
-msgid "Always Show Keyboard Accelerators"
-msgstr "Mindig jelenítse meg a billentyűzetgyorsítókat"
+msgid "Always show"
+msgstr "Mindig látszódjon"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _windowDragMode)
 #: ui/breezestyleconfig.ui:117
@@ -153,21 +154,21 @@ msgstr "&Felfelé nyíl gomb típusa:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:264 ui/breezestyleconfig.ui:283
 #, kde-format
-msgid "No Buttons"
+msgid "No buttons"
 msgstr "Nincsenek gombok"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:269 ui/breezestyleconfig.ui:288
 #, kde-format
-msgid "One Button"
+msgid "One button"
 msgstr "Egy gomb"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:274 ui/breezestyleconfig.ui:293
 #, kde-format
-msgid "Two Buttons"
+msgid "Two buttons"
 msgstr "Két gomb"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
@@ -193,3 +194,33 @@ msgstr "Nem átlátszó"
 #, kde-format
 msgid "Menu:"
 msgstr "Menü:"
+
+#~ msgid "Always Hide Keyboard Accelerators"
+#~ msgstr "Mindig rejtse el a billentyűzetgyorsítókat"
+
+#~ msgid "Show Keyboard Accelerators When Needed"
+#~ msgstr "Akkor jelenítse meg a billentyűzetgyorsítókat, ha szükséges"
+
+#~ msgid "Always Show Keyboard Accelerators"
+#~ msgstr "Mindig jelenítse meg a billentyűzetgyorsítókat"
+
+#~ msgid "Draw frame around page titles"
+#~ msgstr "Keretek rajzolása az oldalcímek körül"
+
+#~ msgid "Animations"
+#~ msgstr "Animációk"
+
+#~ msgid "A&nimations duration:"
+#~ msgstr "Animációk i&dőtartama:"
+
+#~ msgid " ms"
+#~ msgstr " ms"
+
+#~ msgid "Enable animations"
+#~ msgstr "Animációk engedélyezése"
+
+#~ msgid "Advanced"
+#~ msgstr "Speciális"
+
+#~ msgid "Form"
+#~ msgstr "Űrlap"

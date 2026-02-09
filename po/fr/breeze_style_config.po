@@ -4,27 +4,27 @@
 # Vincent Pinon <vpinon@kde.org>, 2016.
 # Simon Depiets <sdepiets@gmail.com>, 2018.
 # Yoann Laissus <yoann.laissus@gmail.com>, 2018.
-# Xavier Besnard <xavier.besnard@neuf.fr>, 2022.
+# SPDX-FileCopyrightText: 2022, 2024 Xavier Besnard <xavier.besnard@kde.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-31 00:22+0000\n"
-"PO-Revision-Date: 2018-11-05 18:55+0100\n"
-"Last-Translator: Yoann Laissus <yoann.laissus@gmail.com>\n"
-"Language-Team: French <kde-francophone@kde.org>\n"
+"POT-Creation-Date: 2024-08-29 00:40+0000\n"
+"PO-Revision-Date: 2024-08-30 08:31+0200\n"
+"Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
+"Language-Team: French <French <kde-francophone@kde.org>>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 21.12.2\n"
+"X-Generator: Lokalize 23.08.5\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
 
-#: main.cpp:24 main.cpp:28
+#: main.cpp:25 main.cpp:29
 #, kde-format
 msgid "Breeze Settings"
 msgstr "Paramètres de Breeze"
@@ -56,20 +56,20 @@ msgstr "Visibilité des accélérateurs &clavier :"
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:85
 #, kde-format
-msgid "Always Hide Keyboard Accelerators"
-msgstr "Toujours masquer les accélérateurs clavier"
+msgid "Always hide"
+msgstr "Toujours masquer"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:90
 #, kde-format
-msgid "Show Keyboard Accelerators When Needed"
-msgstr "Afficher les accélérateurs clavier quand nécessaire"
+msgid "Show when Alt key is pressed"
+msgstr "Afficher lorsque la touche « ALT » est enfoncée"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:95
 #, kde-format
-msgid "Always Show Keyboard Accelerators"
-msgstr "Toujours afficher les accélérateurs clavier"
+msgid "Always show"
+msgstr "Toujours afficher"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _windowDragMode)
 #: ui/breezestyleconfig.ui:117
@@ -162,21 +162,21 @@ msgstr "Type de bouton pour flèche pointant vers le &haut"
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:264 ui/breezestyleconfig.ui:283
 #, kde-format
-msgid "No Buttons"
-msgstr "Pas de boutons"
+msgid "No buttons"
+msgstr "Aucun bouton"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:269 ui/breezestyleconfig.ui:288
 #, kde-format
-msgid "One Button"
+msgid "One button"
 msgstr "Un bouton"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:274 ui/breezestyleconfig.ui:293
 #, kde-format
-msgid "Two Buttons"
+msgid "Two buttons"
 msgstr "Deux boutons"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
@@ -202,3 +202,52 @@ msgstr "Opaque"
 #, kde-format
 msgid "Menu:"
 msgstr "Menu"
+
+#~ msgid "Always Hide Keyboard Accelerators"
+#~ msgstr "Toujours masquer les accélérateurs clavier"
+
+#~ msgid "Show Keyboard Accelerators When Needed"
+#~ msgstr "Afficher les accélérateurs clavier quand nécessaire"
+
+#~ msgid "Always Show Keyboard Accelerators"
+#~ msgstr "Toujours afficher les accélérateurs clavier"
+
+#~ msgid "Draw frame around page titles"
+#~ msgstr "Dessiner un cadre autour des titres de page"
+
+#~ msgid "Animations"
+#~ msgstr "Animations"
+
+#~ msgid "A&nimations duration:"
+#~ msgstr "Durée des a&nimations :"
+
+#~ msgid " ms"
+#~ msgstr " ms"
+
+#~ msgid "Enable animations"
+#~ msgstr "Activer les animations"
+
+#~ msgid "Advanced"
+#~ msgstr "Avancé"
+
+#~ msgid "Widget Style"
+#~ msgstr "Style de composant graphique"
+
+#~ msgid "Modify the appearance of widgets"
+#~ msgstr "Modifier l'apparence des composants graphiques"
+
+#~ msgid "Window Decorations"
+#~ msgstr "Décorations de fenêtres"
+
+#~ msgid "Modify the appearance of window decorations"
+#~ msgstr "Modifier l'apparence des décorations de fenêtre"
+
+#~ msgid "Unable to find breeze style configuration plugin"
+#~ msgstr ""
+#~ "Impossible de trouver le module externe de configuration de style Breeze"
+
+#~ msgid "Unable to find breeze decoration configuration plugin"
+#~ msgstr "Impossible de trouver le module externe de décoration de Breeze"
+
+#~ msgid "Dialog"
+#~ msgstr "Dialogue"

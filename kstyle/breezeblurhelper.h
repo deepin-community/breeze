@@ -1,6 +1,3 @@
-#ifndef breezeblurhelper_h
-#define breezeblurhelper_h
-
 //////////////////////////////////////////////////////////////////////////////
 // breezeblurhelper.h
 // handle regions passed to kwin for blurring
@@ -15,6 +12,8 @@
 // SPDX-License-Identifier: MIT
 //////////////////////////////////////////////////////////////////////////////
 
+#pragma once
+
 #include "breeze.h"
 #include "breezehelper.h"
 
@@ -23,38 +22,36 @@
 
 namespace Breeze
 {
-    class BlurHelper: public QObject
+class BlurHelper : public QObject
+{
+    Q_OBJECT
+
+public:
+    //! constructor
+    explicit BlurHelper(const std::shared_ptr<Helper> &helper);
+
+    //! register widget
+    void registerWidget(QWidget *);
+
+    //! register widget
+    void unregisterWidget(QWidget *);
+
+    //! event filter
+    bool eventFilter(QObject *, QEvent *) override;
+
+protected:
+    //! install event filter to object, in a unique way
+    void addEventFilter(QObject *object)
     {
-        Q_OBJECT
+        object->removeEventFilter(this);
+        object->installEventFilter(this);
+    }
 
-        public:
+    //! update blur regions for given widget
+    void update(QWidget *) const;
 
-        //! constructor
-        BlurHelper( QObject* );
-
-        //! register widget
-        void registerWidget( QWidget* );
-
-        //! register widget
-        void unregisterWidget( QWidget* );
-
-        //! event filter
-        bool eventFilter( QObject*, QEvent* ) override;
-
-        protected:
-
-        //! install event filter to object, in a unique way
-        void addEventFilter( QObject* object )
-        {
-            object->removeEventFilter( this );
-            object->installEventFilter( this );
-        }
-
-        //! update blur regions for given widget
-        void update( QWidget* ) const;
-
-    };
+private:
+    std::shared_ptr<Helper> _helper;
+};
 
 }
-
-#endif

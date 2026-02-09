@@ -1,6 +1,3 @@
-#ifndef breezestackedwidget_datah
-#define breezestackedwidget_datah
-
 //////////////////////////////////////////////////////////////////////////////
 // breezestackedwidgetdata.h
 // data container for QStackedWidget transition
@@ -11,48 +8,43 @@
 // SPDX-License-Identifier: MIT
 //////////////////////////////////////////////////////////////////////////////
 
+#pragma once
+
 #include "breezetransitiondata.h"
 
 #include <QStackedWidget>
 
 namespace Breeze
 {
+//* generic data
+class StackedWidgetData : public TransitionData
+{
+    Q_OBJECT
 
-    //* generic data
-    class StackedWidgetData: public TransitionData
-    {
+public:
+    //* constructor
+    StackedWidgetData(QObject *, QStackedWidget *, int);
 
-        Q_OBJECT
+protected Q_SLOTS:
 
-        public:
+    //* initialize animation
+    bool initializeAnimation() override;
 
-        //* constructor
-        StackedWidgetData( QObject*, QStackedWidget*, int );
+    //* animate
+    bool animate() override;
 
-        protected Q_SLOTS:
+    //* finish animation
+    void finishAnimation();
 
-        //* initialize animation
-        bool initializeAnimation() override;
+    //* called when target is destroyed
+    void targetDestroyed();
 
-        //* animate
-        bool animate() override;
+private:
+    //* target
+    WeakPointer<QStackedWidget> _target;
 
-        //* finish animation
-        void finishAnimation();
-
-        //* called when target is destroyed
-        void targetDestroyed();
-
-        private:
-
-        //* target
-        WeakPointer<QStackedWidget> _target;
-
-        //* current index
-        int _index;
-
-    };
+    //* current index
+    int _index;
+};
 
 }
-
-#endif

@@ -3,32 +3,44 @@ Section: kde
 Priority: optional
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Aurélien COUDERC <coucouf@debian.org>,
-           Norbert Preining <norbert@preining.info>,
            Patrick Franz <deltaone@debian.org>,
            Scarlett Moore <sgmoore@kde.org>,
 Build-Depends: cmake (>= 3.16~),
                debhelper-compat (= 13),
-               extra-cmake-modules (>= 5.86~),
+               dh-sequence-kf6,
+               dh-sequence-pkgkde-symbolshelper,
+               extra-cmake-modules (>= 5.102.0~),
                gettext,
-               libkdecorations2-dev (>= 4:5.24.2~),
-               libkf5config-dev (>= 5.86~),
-               libkf5configwidgets-dev (>= 5.86~),
-               libkf5coreaddons-dev (>= 5.86~),
-               libkf5guiaddons-dev (>= 5.86~),
-               libkf5i18n-dev (>= 5.86~),
-               libkf5iconthemes-dev (>= 5.86~),
-               libkf5kcmutils-dev (>= 5.86~),
-               libkf5package-dev (>= 5.86~),
-               libkf5style-dev (>= 5.86~),
-               libkf5wayland-dev (>= 5.86.0~) [linux-any],
-               libkf5windowsystem-dev (>= 5.86~),
-               libqt5x11extras5-dev (>= 5.15.0~),
+               kirigami2-dev (>= 5.102.0~),
+#              libkdecorations2-dev (>= 4:6.2.0~),
+               libkf5config-dev (>= 5.102.0~),
+               libkf5configwidgets-dev (>= 5.102.0~),
+               libkf5coreaddons-dev (>= 5.102.0~),
+               libkf5guiaddons-dev (>= 5.102.0~),
+               libkf5i18n-dev (>= 5.102.0~),
+               libkf5iconthemes-dev (>= 5.102.0~),
+               libkf5kcmutils-dev (>= 5.102.0~),
+               libkf5style-dev (>= 5.102.0~),
+               libkf5windowsystem-dev (>= 5.102.0~),
+               libkf6colorscheme-dev (>= 6.5.0~),
+               libkf6config-dev (>= 6.5.0~),
+               libkf6coreaddons-dev (>= 6.5.0~),
+               libkf6guiaddons-dev (>= 6.5.0~),
+               libkf6i18n-dev (>= 6.5.0~),
+               libkf6iconthemes-dev (>= 6.5.0~),
+               libkf6kcmutils-dev (>= 6.5.0~),
+#              libkf6style-dev (>= 6.5.0~),
+               libkf6windowsystem-dev (>= 6.5.0~),
+               libkirigami-dev (>= 6.5.0~),
+               libqt5x11extras5-dev (>= 5.15.2~),
                libx11-dev,
-               pkg-config,
-               pkg-kde-tools (>= 0.15.15ubuntu1~),
-               qtbase5-dev (>= 5.15.0~),
-               qtdeclarative5-dev (>= 5.15.0~),
-Standards-Version: 4.6.0
+               libxkbcommon-dev,
+               pkgconf,
+               qt6-base-dev (>= 6.7.0~),
+               qt6-declarative-dev (>= 6.7.0~),
+               qtbase5-dev (>= 5.15.2~),
+               qtdeclarative5-dev (>= 5.15.2~),
+Standards-Version: 4.7.0
 Homepage: https://invent.kde.org/?p=breeze.git/breeze
 Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/breeze
 Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/breeze.git
@@ -38,33 +50,42 @@ Package: breeze
 Architecture: any
 Depends: breeze-cursor-theme (= ${source:Version}),
          breeze-icon-theme,
+         breeze-wallpaper (= ${source:Version}),
          kde-style-breeze (= ${binary:Version}),
          kwin-style-breeze (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
-Recommends: kde-style-qtcurve
-Suggests: orion-gtk-theme
-Breaks: plasma-desktop (<< 4:5.14), plasma-integration (<< 5.14)
 Description: Default Plasma theme (Metapackage)
  This is the default theme for the KDE Plasma desktop.
  .
  This package includes wallpapers, icons, cursors, KWin style and Qt
- widget style for the Plasma 5 desktop.
+ widget style for the Plasma 6 desktop.
  .
  This package is part of the KDE base workspace module.
+
+Package: breeze-wallpaper
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+Breaks: breeze (<< 4:6.1.4-2~),
+Replaces: breeze (<< 4:6.1.4-2~),
+Description: Default Plasma wallpaper
+ This is the default wallpaper for the KDE Plasma 6 desktop.
+ .
+ This package is part of the Breeze theme module.
 
 Package: breeze-cursor-theme
 Architecture: all
 Multi-Arch: foreign
-Depends: ${misc:Depends}
+Depends: ${misc:Depends},
 Description: Default Plasma cursor theme
- This is the default cursor theme for the KDE Plasma 5 desktop.
+ This is the default cursor theme for the KDE Plasma 6 desktop.
  .
  This package is part of the Breeze theme module.
 
 Package: breeze-dev
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends},
 Description: Default Plasma theme (development files)
  This is the default theme for the KDE Plasma desktop.
  .
@@ -74,7 +95,8 @@ Description: Default Plasma theme (development files)
 
 Package: kde-style-breeze
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends},
+Recommends: libkf6kcmutils-bin,
 Description: Widget style for Qt and KDE Software
  This is the default widget style for KDE's Plasma desktop.
  .
@@ -85,7 +107,9 @@ Architecture: any
 Depends: kde-style-breeze (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends},
+Recommends: libkf6kcmutils-bin,
 Description: KWin Breeze Style
- This is the Breeze window manager style for the KDE Plasma 5 desktop.
+ This is the Breeze window manager style for the KDE Plasma 6 desktop.
  .
  This package is part of the Breeze theme module.
+

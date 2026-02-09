@@ -1,27 +1,3 @@
-################# Qt/KDE #################
-find_package(Qt5 ${QT_MIN_VERSION} REQUIRED CONFIG COMPONENTS Widgets DBus)
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS
-    I18n
-    Config
-    GuiAddons
-    IconThemes
-    ConfigWidgets
-    WindowSystem)
-
-find_package(Qt5 ${QT_MIN_VERSION} COMPONENTS Quick X11Extras)
-set(BREEZE_HAVE_QTQUICK ${Qt5Quick_FOUND})
-set(BREEZE_HAVE_QTX11EXTRAS ${Qt5X11Extras_FOUND})
-
-find_package( KF5FrameworkIntegration ${KF5_MIN_VERSION} CONFIG )
-set_package_properties(KF5FrameworkIntegration PROPERTIES
-    DESCRIPTION "KF5 Framework Integration"
-    URL "https://projects.kde.org/projects/frameworks/frameworkintegration"
-    TYPE OPTIONAL
-    PURPOSE "Required to use KStyle convenience functionalities in style")
-
-set(BREEZE_HAVE_KSTYLE ${KF5FrameworkIntegration_FOUND})
-
-
 ################# includes #################
 include_directories(
   animations
@@ -80,31 +56,81 @@ set(breeze_PART_SRCS
 
 kconfig_add_kcfg_files(breeze_PART_SRCS ../kdecoration/breezesettings.kcfgc)
 kconfig_add_kcfg_files(breeze_PART_SRCS breezestyleconfigdata.kcfgc)
-add_library(breeze MODULE ${breeze_PART_SRCS})
-target_link_libraries(breeze Qt::Core Qt::Gui Qt::Widgets Qt::DBus)
-if( BREEZE_HAVE_QTQUICK )
-    target_link_libraries(breeze Qt::Quick)
-endif()
-if (BREEZE_HAVE_QTX11EXTRAS)
-    target_link_libraries(breeze Qt::X11Extras)
-endif()
-target_link_libraries(breeze KF5::ConfigCore KF5::ConfigWidgets KF5::GuiAddons KF5::IconThemes KF5::WindowSystem)
-target_link_libraries(breeze breezecommon5)
 
-if(KF5FrameworkIntegration_FOUND)
-    target_link_libraries(breeze KF5::Style)
+
+add_library(breeze${QT_MAJOR_VERSION} MODULE ${breeze_PART_SRCS})
+
+ecm_qt_declare_logging_category(breeze${QT_MAJOR_VERSION}
+    HEADER
+        breeze_logging.h
+    IDENTIFIER
+        BREEZE
+    CATEGORY_NAME
+        breeze${QT_MAJOR_VERSION}
+    DEFAULT_SEVERITY
+        Warning
+)
+
+target_link_libraries(breeze${QT_MAJOR_VERSION}
+    Qt${QT_MAJOR_VERSION}::Core
+    Qt${QT_MAJOR_VERSION}::Gui
+    Qt${QT_MAJOR_VERSION}::Widgets
+)
+
+if(HAVE_QTDBUS)
+    target_link_libraries(breeze${QT_MAJOR_VERSION}
+        Qt${QT_MAJOR_VERSION}::DBus
+    )
 endif()
+
+if( BREEZE_HAVE_QTQUICK )
+    target_link_libraries(breeze${QT_MAJOR_VERSION} 
+        Qt${QT_MAJOR_VERSION}::Quick
+        KF${QT_MAJOR_VERSION}::CoreAddons
+    )
+endif()
+
+target_link_libraries(breeze${QT_MAJOR_VERSION}
+    KF${QT_MAJOR_VERSION}::CoreAddons
+    KF${QT_MAJOR_VERSION}::ConfigCore
+    KF${QT_MAJOR_VERSION}::ConfigGui
+    KF${QT_MAJOR_VERSION}::GuiAddons
+    KF${QT_MAJOR_VERSION}::IconThemes
+    KF${QT_MAJOR_VERSION}::WindowSystem
+)
+
+if(QT_MAJOR_VERSION STREQUAL "5")
+    target_link_libraries(breeze5 KF5::ConfigWidgets)
+    if (BREEZE_HAVE_QTQUICK)
+        target_link_libraries(breeze5 KF5::Kirigami2)
+    endif()
+else()
+    target_link_libraries(breeze6 KF6::ColorScheme)
+    if (BREEZE_HAVE_QTQUICK)
+        target_link_libraries(breeze6 KF6::KirigamiPlatform)
+    endif()
+endif()
+
+target_link_libraries(breeze${QT_MAJOR_VERSION} breezecommon${QT_MAJOR_VERSION})
+
+if(KF${QT_MAJOR_VERSION}FrameworkIntegration_FOUND)
+    target_link_libraries(breeze${QT_MAJOR_VERSION}  KF${QT_MAJOR_VERSION}::Style)
+endif()
+
 
 if (WIN32)
     # As stated in https://docs.microsoft.com/en-us/cpp/c-runtime-library/math-constants M_PI only gets defined
     # when if _USE_MATH_DEFINES is defined
-    target_compile_definitions(breeze PRIVATE _USE_MATH_DEFINES _BSD_SOURCE)
+    target_compile_definitions(breeze${QT_MAJOR_VERSION}  PRIVATE _USE_MATH_DEFINES _BSD_SOURCE)
 endif()
 
 
 ########### install files ###############
-install(TARGETS breeze DESTINATION ${KDE_INSTALL_QTPLUGINDIR}/styles/)
+install(TARGETS breeze${QT_MAJOR_VERSION}  DESTINATION ${KDE_INSTALL_QTPLUGINDIR}/styles/)
 install(FILES breeze.themerc  DESTINATION  ${KDE_INSTALL_DATADIR}/kstyle/themes)
 
 ########### subdirectories ###############
-add_subdirectory(config)
+
+if (QT_MAJOR_VERSION EQUAL "6" AND TARGET "KF6::KCMUtils")
+    add_subdirectory(config)
+endif()
