@@ -1,14 +1,14 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
+# Safa Alfulaij <safa1996alfulaij@gmail.com>, 2015, 2015, 2016.
+# SPDX-FileCopyrightText: 2021, 2022, 2024 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
 #
-# Safa Alfulaij <safa1996alfulaij@gmail.com>, 2015, ٢٠١٥, ٢٠١٦.
-# Zayed Al-Saidi <zayed.alsaidi@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-31 00:22+0000\n"
-"PO-Revision-Date: 2021-06-27 22:48+0400\n"
+"POT-Creation-Date: 2024-08-29 00:40+0000\n"
+"PO-Revision-Date: 2024-09-05 09:57+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -17,9 +17,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-"X-Generator: Lokalize 21.07.70\n"
+"X-Generator: Lokalize 23.08.5\n"
 
-#: main.cpp:24 main.cpp:28
+#: main.cpp:25 main.cpp:29
 #, kde-format
 msgid "Breeze Settings"
 msgstr "إعدادات نسيم"
@@ -51,20 +51,20 @@ msgstr "ظهور مسرّعات لو&حة المفاتيح:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:85
 #, kde-format
-msgid "Always Hide Keyboard Accelerators"
-msgstr "أخفِ دائمًا مسرّعات لوحة المفاتيح"
+msgid "Always hide"
+msgstr "أخفِ دائمًا"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:90
 #, kde-format
-msgid "Show Keyboard Accelerators When Needed"
-msgstr "أظهر مسرّعات لوحة المفاتيح عند الحاجة"
+msgid "Show when Alt key is pressed"
+msgstr "أظهر عند ضغط على مفتاح Alt"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:95
 #, kde-format
-msgid "Always Show Keyboard Accelerators"
-msgstr "أظهر دائمًا مسرّعات لوحة المفاتيح"
+msgid "Always show"
+msgstr "أظهر دائمًا"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _windowDragMode)
 #: ui/breezestyleconfig.ui:117
@@ -154,21 +154,21 @@ msgstr "نوع زرّ السّهم ال&علويّ:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:264 ui/breezestyleconfig.ui:283
 #, kde-format
-msgid "No Buttons"
+msgid "No buttons"
 msgstr "بلا أزرار"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:269 ui/breezestyleconfig.ui:288
 #, kde-format
-msgid "One Button"
+msgid "One button"
 msgstr "زرّ واحد"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:274 ui/breezestyleconfig.ui:293
 #, kde-format
-msgid "Two Buttons"
+msgid "Two buttons"
 msgstr "زرّان"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
@@ -194,3 +194,34 @@ msgstr "معتم"
 #, kde-format
 msgid "Menu:"
 msgstr "القائمة:"
+
+#~ msgid "Always Hide Keyboard Accelerators"
+#~ msgstr "أخفِ دائمًا مسرّعات لوحة المفاتيح"
+
+#~ msgid "Show Keyboard Accelerators When Needed"
+#~ msgstr "أظهر مسرّعات لوحة المفاتيح عند الحاجة"
+
+#~ msgid "Always Show Keyboard Accelerators"
+#~ msgstr "أظهر دائمًا مسرّعات لوحة المفاتيح"
+
+#~ msgid "Draw frame around page titles"
+#~ msgstr "ارسم إطارًا حول عناوين الصّفحات"
+
+#~ msgid "Animations"
+#~ msgstr "التّحريكات"
+
+#, fuzzy
+#~| msgid "Animations d&uration:"
+#~ msgid "A&nimations duration:"
+#~ msgstr "م&دّة التّحريكات:"
+
+#, fuzzy
+#~| msgid "ms"
+#~ msgid " ms"
+#~ msgstr "م.ث"
+
+#~ msgid "Enable animations"
+#~ msgstr "مكّن التّحريكات"
+
+#~ msgid "Advanced"
+#~ msgstr "متقدّم"

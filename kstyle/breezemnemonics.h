@@ -4,56 +4,50 @@
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-#ifndef breezemnemonics_h
-#define breezemnemonics_h
+#pragma once
 
+#include <QApplication>
 #include <QEvent>
 #include <QObject>
-#include <QApplication>
 
 #include "breezestyleconfigdata.h"
 
 namespace Breeze
 {
+//* keyboard accelerators
+class Mnemonics : public QObject
+{
+    Q_OBJECT
 
-    class Mnemonics: public QObject
+public:
+    //* constructor
+    explicit Mnemonics();
+
+    //* set mode
+    void setMode(int);
+
+    //* event filter
+    bool eventFilter(QObject *, QEvent *) override;
+
+    //* true if mnemonics are enabled
+    bool enabled() const
     {
+        return _enabled;
+    }
 
-        Q_OBJECT
+    //* alignment flag
+    int textFlags() const
+    {
+        return _enabled ? Qt::TextShowMnemonic : Qt::TextHideMnemonic;
+    }
 
-        public:
+protected:
+    //* set enable state
+    void setEnabled(bool);
 
-        //* constructor
-        explicit Mnemonics( QObject* parent ):
-            QObject( parent )
-            {}
-
-        //* set mode
-        void setMode( int );
-
-        //* event filter
-        bool eventFilter( QObject*, QEvent* ) override;
-
-        //* true if mnemonics are enabled
-        bool enabled() const
-        { return _enabled; }
-
-        //* alignment flag
-        int textFlags() const
-        { return _enabled ? Qt::TextShowMnemonic : Qt::TextHideMnemonic; }
-
-        protected:
-
-        //* set enable state
-        void setEnabled( bool );
-
-        private:
-
-        //* enable state
-        bool _enabled = true;
-
-    };
+private:
+    //* enable state
+    bool _enabled = true;
+};
 
 }
-
-#endif

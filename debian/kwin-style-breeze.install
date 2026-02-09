@@ -1,4 +1,6 @@
-usr/lib/*/qt5/plugins/org.kde.kdecoration2/breezedecoration.so
-usr/share/kservices5/breezedecorationconfig.desktop
+usr/lib/*/qt6/plugins/kstyle_config/breezestyleconfig.so
+usr/lib/*/qt6/plugins/org.kde.kdecoration2.kcm/kcm_breezedecoration.so
+usr/lib/*/qt6/plugins/org.kde.kdecoration2/org.kde.breeze.so
+usr/share/applications/kcm_breezedecoration.desktop
 usr/share/locale/*/*/breeze_kwin_deco.mo
 usr/share/locale/*/LC_MESSAGES/breeze_kwin_deco.mo

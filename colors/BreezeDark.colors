@@ -1,3 +1,11 @@
+# SPDX-FileCopyrightText: Andrew Lake <jamboarder@gmail.com>
+# SPDX-FileCopyrightText: Marco Martin <notmart@gmail.com>
+# SPDX-FileCopyrightText: Nate Graham <nate@kde.org>
+# SPDX-FileCopyrightText: Noah Davis <noahadvs@gmail.com>
+# SPDX-FileCopyrightText: Neal Gompa <ngompa@kde.org>
+# SPDX-FileCopyrightText: David Redondo <kde@david-redondo.de>
+# SPDX-License-Identifier: LGPL-2.0-or-later
+
 [ColorEffects:Disabled]
 Color=56,56,56
 ColorAmount=0
@@ -135,6 +143,7 @@ ColorScheme=BreezeDark
 Name=Breeze Dark
 Name[ar]=نسيم داكن
 Name[az]=Breeze - Tünd
+Name[bg]=Breeze Тъмен
 Name[bs]=Breeze tamna
 Name[ca]=Brisa fosca
 Name[ca@valencia]=Brisa fosca
@@ -143,21 +152,25 @@ Name[da]=Breeze Dark
 Name[de]=Breeze Dunkel
 Name[el]=Breeze σκούρο
 Name[en_GB]=Breeze Dark
+Name[eo]=Breeze Dark
 Name[es]=Brisa oscuro
 Name[et]=Breeze tume
 Name[eu]=Breeze iluna
 Name[fi]=Tumma Breeze
 Name[fr]=Brise sombre
-Name[gl]=Breeze Dark
-Name[he]=Breeze Dark
+Name[gl]=Brisa escura
+Name[he]=בריזה כהה
 Name[hi]=ब्रीज़ गहरा
 Name[hu]=Breeze Dark
 Name[ia]=Brisa obscure
 Name[id]=Breeze Gelap
+Name[is]=Breeze dökkt
 Name[it]=Brezza scuro
 Name[ja]=Breeze ダーク
+Name[ka]=Breeze მუქი
 Name[ko]=어두운 Breeze
 Name[lt]=Breeze tamsus
+Name[lv]=Breeze Dark
 Name[nb]=Breeze mørk
 Name[nl]=Breeze Dark
 Name[nn]=Breeze mørk
@@ -175,7 +188,7 @@ Name[sr@ijekavianlatin]=Povetarac tamni
 Name[sr@latin]=Povetarac tamni
 Name[sv]=Breeze mörk
 Name[tg]=Насими торик
-Name[tr]=Koyu Esinti
+Name[tr]=Esinti Koyu
 Name[uk]=Темна Breeze
 Name[x-test]=xxBreeze Darkxx
 Name[zh_CN]=Breeze 微风深色

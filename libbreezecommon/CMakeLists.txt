@@ -1,25 +1,8 @@
-################# dependencies #################
-### Qt/KDE
-find_package(Qt5 ${QT_MIN_VERSION} REQUIRED CONFIG COMPONENTS Widgets)
+add_library(breezecommon${QT_MAJOR_VERSION} OBJECT breezeboxshadowrenderer.cpp)
 
-################# breezestyle target #################
-set(breezecommon_LIB_SRCS
-    breezeboxshadowrenderer.cpp
-)
+set_target_properties(breezecommon${QT_MAJOR_VERSION} PROPERTIES POSITION_INDEPENDENT_CODE TRUE)
 
-add_library(breezecommon5 ${breezecommon_LIB_SRCS})
-
-generate_export_header(breezecommon5
-    BASE_NAME breezecommon
-    EXPORT_FILE_NAME breezecommon_export.h)
-
-target_link_libraries(breezecommon5
+target_link_libraries(breezecommon${QT_MAJOR_VERSION}
     PUBLIC
-        Qt::Core
-        Qt::Gui)
-
-set_target_properties(breezecommon5 PROPERTIES
-    VERSION ${PROJECT_VERSION}
-    SOVERSION ${PROJECT_VERSION_MAJOR})
-
-install(TARGETS breezecommon5 ${KDE_INSTALL_TARGETS_DEFAULT_ARGS} LIBRARY NAMELINK_SKIP)
+        Qt${QT_MAJOR_VERSION}::Core
+        Qt${QT_MAJOR_VERSION}::Gui)

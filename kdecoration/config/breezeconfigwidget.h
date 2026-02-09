@@ -1,5 +1,3 @@
-#ifndef breezeconfigwidget_h
-#define breezeconfigwidget_h
 //////////////////////////////////////////////////////////////////////////////
 // breezeconfigurationui.h
 // -------------------
@@ -9,69 +7,59 @@
 // SPDX-License-Identifier: MIT
 //////////////////////////////////////////////////////////////////////////////
 
-#include "ui_breezeconfigurationui.h"
+#pragma once
+
+#include "breeze.h"
 #include "breezeexceptionlistwidget.h"
 #include "breezesettings.h"
-#include "breeze.h"
+#include "ui_breezeconfigurationui.h"
 
 #include <KCModule>
 #include <KSharedConfig>
 
-#include <QWidget>
 #include <QSharedPointer>
+#include <QWidget>
 
 namespace Breeze
 {
+//_____________________________________________
+class ConfigWidget : public KCModule
+{
+    Q_OBJECT
 
-    //_____________________________________________
-    class ConfigWidget: public KCModule
-    {
+public:
+    //* constructor
+    explicit ConfigWidget(QObject *parent, const KPluginMetaData &data, const QVariantList &args);
 
-        Q_OBJECT
+    //* destructor
+    virtual ~ConfigWidget() = default;
 
-        public:
+    //* default
+    void defaults() override;
 
-        //* constructor
-        explicit ConfigWidget( QWidget*, const QVariantList& );
+    //* load configuration
+    void load() override;
 
-        //* destructor
-        virtual ~ConfigWidget() = default;
+    //* save configuration
+    void save() override;
 
-        //* default
-        void defaults() override;
+protected Q_SLOTS:
 
-        //* load configuration
-        void load() override;
+    //* update changed state
+    virtual void updateChanged();
 
-        //* save configuration
-        void save() override;
+private:
+    //* ui
+    Ui_BreezeConfigurationUI m_ui;
 
-        protected Q_SLOTS:
+    //* kconfiguration object
+    KSharedConfig::Ptr m_configuration;
 
-        //* update changed state
-        virtual void updateChanged();
+    //* internal exception
+    InternalSettingsPtr m_internalSettings;
 
-        protected:
-
-        //* set changed state
-        void setChanged( bool );
-
-        private:
-
-        //* ui
-        Ui_BreezeConfigurationUI m_ui;
-
-        //* kconfiguration object
-        KSharedConfig::Ptr m_configuration;
-
-        //* internal exception
-        InternalSettingsPtr m_internalSettings;
-
-        //* changed state
-        bool m_changed;
-
-    };
+    //* changed state
+    bool m_changed;
+};
 
 }
-
-#endif

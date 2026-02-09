@@ -4,52 +4,48 @@
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
 
-#ifndef breezedial_data_h
-#define breezedial_data_h
+#pragma once
 
 #include "breezewidgetstatedata.h"
 
 namespace Breeze
 {
+//* dial data
+class DialData : public WidgetStateData
+{
+    Q_OBJECT
 
-    //* dial data
-    class DialData: public WidgetStateData
+public:
+    //* constructor
+    DialData(QObject *parent, QObject *target, int duration);
+
+    //* event filter
+    bool eventFilter(QObject *, QEvent *) override;
+
+    //* subcontrol rect
+    void setHandleRect(const QRect &rect)
     {
+        _handleRect = rect;
+    }
 
-        Q_OBJECT
+    //* mouse position
+    QPoint position() const
+    {
+        return _position;
+    }
 
-        public:
+private:
+    //* hoverMoveEvent
+    void hoverMoveEvent(QObject *, QEvent *);
 
-        //* constructor
-        DialData( QObject* parent, QWidget* target, int );
+    //* hoverMoveEvent
+    void hoverLeaveEvent(QObject *, QEvent *);
 
-        //* event filter
-        bool eventFilter( QObject*, QEvent* ) override;
+    //* rect
+    QRect _handleRect;
 
-        //* subcontrol rect
-        void setHandleRect( const QRect& rect )
-        { _handleRect = rect; }
-
-        //* mouse position
-        QPoint position() const
-        { return _position; }
-
-        private:
-
-        //* hoverMoveEvent
-        void hoverMoveEvent( QObject*, QEvent* );
-
-        //* hoverMoveEvent
-        void hoverLeaveEvent( QObject*, QEvent* );
-
-        //* rect
-        QRect _handleRect;
-
-        //* mouse position
-        QPoint _position;
-
-    };
+    //* mouse position
+    QPoint _position;
+};
 
 }
-
-#endif
