@@ -3,22 +3,23 @@
 #
 # Dimitris Kardarakos <dimkard@gmail.com>, 2014, 2015, 2016.
 # Petros Vidalis <pvidalis@gmail.com>, 2018.
+# Stelios <sstavra@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-31 00:22+0000\n"
-"PO-Revision-Date: 2018-10-19 10:40+0200\n"
-"Last-Translator: Petros Vidalis <pvidalis@gmail.com>\n"
+"POT-Creation-Date: 2024-08-29 00:40+0000\n"
+"PO-Revision-Date: 2023-01-04 11:10+0200\n"
+"Last-Translator: Stelios <sstavra@gmail.com>\n"
 "Language-Team: Greek <kde-i18n-el@kde.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 21.12.3\n"
 
-#: main.cpp:24 main.cpp:28
+#: main.cpp:25 main.cpp:29
 #, kde-format
 msgid "Breeze Settings"
 msgstr "Ρυθμίσεις Breeze"
@@ -50,20 +51,20 @@ msgstr "&Ορατότητα επιταχυντών πληκτρολογίου:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:85
 #, kde-format
-msgid "Always Hide Keyboard Accelerators"
-msgstr "Πάντα να γίνεται απόκρυψη των επιταχυντών πληκτρολογίου"
+msgid "Always hide"
+msgstr "Απόκρυψη πάντα"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:90
 #, kde-format
-msgid "Show Keyboard Accelerators When Needed"
-msgstr "Να εμφανίζονται οι επιταχυντές πληκτρολογίου όποτε απαιτείται"
+msgid "Show when Alt key is pressed"
+msgstr "Να εμφανίζεται με την πίεση του πλήκτρου Alt"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:95
 #, kde-format
-msgid "Always Show Keyboard Accelerators"
-msgstr "Να εμφανίζονται πάντα οι επιταχυντές πληκτρολογίου"
+msgid "Always show"
+msgstr "Εμφάνιση πάντα"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _windowDragMode)
 #: ui/breezestyleconfig.ui:117
@@ -154,22 +155,25 @@ msgstr "Τύπος για το κουμπί &πάνω βέλους:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:264 ui/breezestyleconfig.ui:283
-#, kde-format
-msgid "No Buttons"
+#, fuzzy, kde-format
+#| msgid "No Buttons"
+msgid "No buttons"
 msgstr "Χωρίς κουμπιά"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:269 ui/breezestyleconfig.ui:288
-#, kde-format
-msgid "One Button"
+#, fuzzy, kde-format
+#| msgid "One Button"
+msgid "One button"
 msgstr "Ένα κουμπί"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:274 ui/breezestyleconfig.ui:293
-#, kde-format
-msgid "Two Buttons"
+#, fuzzy, kde-format
+#| msgid "Two Buttons"
+msgid "Two buttons"
 msgstr "Δύο κουμπιά"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
@@ -195,3 +199,33 @@ msgstr "Αδιαφανές"
 #, kde-format
 msgid "Menu:"
 msgstr "Μενού:"
+
+#~ msgid "Always Hide Keyboard Accelerators"
+#~ msgstr "Πάντα να γίνεται απόκρυψη των επιταχυντών πληκτρολογίου"
+
+#~ msgid "Show Keyboard Accelerators When Needed"
+#~ msgstr "Να εμφανίζονται οι επιταχυντές πληκτρολογίου όποτε απαιτείται"
+
+#~ msgid "Always Show Keyboard Accelerators"
+#~ msgstr "Να εμφανίζονται πάντα οι επιταχυντές πληκτρολογίου"
+
+#~ msgid "Draw frame around page titles"
+#~ msgstr "Σχεδίαση πλαισίου γύρω από τους τίτλους των σελίδων"
+
+#~ msgid "Animations"
+#~ msgstr "Εφέ κίνησης"
+
+#~ msgid "A&nimations duration:"
+#~ msgstr "Διά&ρκεια εφέ κίνησης:"
+
+#~ msgid " ms"
+#~ msgstr "ms"
+
+#~ msgid "Enable animations"
+#~ msgstr "Ενεργοποίηση εφέ κίνησης"
+
+#~ msgid "Advanced"
+#~ msgstr "Για προχωρημένους"
+
+#~ msgid "Form"
+#~ msgstr "Φόρμα"

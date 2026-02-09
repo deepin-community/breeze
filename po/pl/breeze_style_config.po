@@ -1,15 +1,15 @@
 # Copyright (C) YEAR This_file_is_part_of_KDE
 # This file is distributed under the same license as the PACKAGE package.
-#
-# Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>, 2014, 2015, 2016, 2017, 2018.
+# SPDX-FileCopyrightText: 2014, 2015, 2016, 2017, 2018, 2022, 2024 Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>
 # Ignacy Kajdan <ignacy.kajdan@gmail.com>, 2021.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-31 00:22+0000\n"
-"PO-Revision-Date: 2021-07-18 09:10+0200\n"
-"Last-Translator: Ignacy Kajdan <ignacy.kajdan@gmail.com>\n"
+"POT-Creation-Date: 2024-08-29 00:40+0000\n"
+"PO-Revision-Date: 2024-08-31 06:55+0200\n"
+"Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
@@ -17,9 +17,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 20.12.1\n"
+"X-Generator: Lokalize 23.08.5\n"
 
-#: main.cpp:24 main.cpp:28
+#: main.cpp:25 main.cpp:29
 #, kde-format
 msgid "Breeze Settings"
 msgstr "Ustawienia Bryzy"
@@ -51,19 +51,19 @@ msgstr "Akceleratory &klawiatury:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:85
 #, kde-format
-msgid "Always Hide Keyboard Accelerators"
+msgid "Always hide"
 msgstr "Zawsze ukrywaj"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:90
 #, kde-format
-msgid "Show Keyboard Accelerators When Needed"
-msgstr "Pokazuj, gdy są potrzebne"
+msgid "Show when Alt key is pressed"
+msgstr "Pokaż, po naciśnięciu klawisza Alt"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:95
 #, kde-format
-msgid "Always Show Keyboard Accelerators"
+msgid "Always show"
 msgstr "Zawsze pokazuj"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _windowDragMode)
@@ -154,21 +154,21 @@ msgstr "Rodzaj przycisku górnej s&trzałki:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:264 ui/breezestyleconfig.ui:283
 #, kde-format
-msgid "No Buttons"
+msgid "No buttons"
 msgstr "Brak przycisków"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:269 ui/breezestyleconfig.ui:288
 #, kde-format
-msgid "One Button"
+msgid "One button"
 msgstr "Jeden przycisk"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:274 ui/breezestyleconfig.ui:293
 #, kde-format
-msgid "Two Buttons"
+msgid "Two buttons"
 msgstr "Dwa przyciski"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
@@ -194,3 +194,57 @@ msgstr "Nieprzezroczyste"
 #, kde-format
 msgid "Menu:"
 msgstr "Menu:"
+
+#~ msgid "Always Hide Keyboard Accelerators"
+#~ msgstr "Zawsze ukrywaj"
+
+#~ msgid "Show Keyboard Accelerators When Needed"
+#~ msgstr "Pokazuj, gdy są potrzebne"
+
+#~ msgid "Always Show Keyboard Accelerators"
+#~ msgstr "Zawsze pokazuj"
+
+#~ msgid "Draw frame around page titles"
+#~ msgstr "Rysuj ramki wokół tytułów stron"
+
+#~ msgid "Animations"
+#~ msgstr "Animacje"
+
+#~ msgid "A&nimations duration:"
+#~ msgstr "Czas &trwania animacji:"
+
+#~ msgid " ms"
+#~ msgstr " ms"
+
+#~ msgid "Enable animations"
+#~ msgstr "Włącz animacje"
+
+#~ msgid "Only show full scrollbar on mouse over"
+#~ msgstr "Pełny pasek przewijania pokazuj tylko po najechaniu myszą"
+
+#~ msgid "Advanced"
+#~ msgstr "Zaawansowane"
+
+#~ msgid "Widget Style"
+#~ msgstr "Styl elementów interfejsu"
+
+#~ msgid "Modify the appearance of widgets"
+#~ msgstr "Zmień wygląd elementów interfejsu"
+
+#~ msgid "Window Decorations"
+#~ msgstr "Wystrój okien"
+
+#~ msgid "Modify the appearance of window decorations"
+#~ msgstr "Zmień wygląd i wystrój okien"
+
+#~ msgid "Unable to find breeze style configuration plugin"
+#~ msgstr "Nie można znaleźć wtyczki ustawień stylu Bryza"
+
+#~ msgid "Unable to find breeze decoration configuration plugin"
+#~ msgstr "Nie można znaleźć wtyczki ustawień wystroju Bryza"
+
+#~ msgid "Dialog"
+#~ msgstr "Okna dialogowe"
+
+#~ msgid "Form"
+#~ msgstr "Formularz"

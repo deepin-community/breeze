@@ -1,6 +1,3 @@
-#ifndef breezedetectwidget_h
-#define breezedetectwidget_h
-
 //////////////////////////////////////////////////////////////////////////////
 // breezedetectwidget.h
 // Note: this class is a stripped down version of
@@ -14,84 +11,33 @@
 // SPDX-License-Identifier: MIT
 //////////////////////////////////////////////////////////////////////////////
 
-#include "breezesettings.h"
-#include "ui_breezedetectwidget.h"
+#pragma once
 
-#include <QByteArray>
-#include <QCheckBox>
-#include <QDialog>
-#include <QEvent>
-#include <QLabel>
-
-#include <kwindowsystem.h>
+#include <QObject>
+#include <QVariantMap>
 
 namespace Breeze
 {
+class DetectDialog : public QObject
+{
+    Q_OBJECT
 
-    class DetectDialog : public QDialog
-    {
+public:
+    //* constructor
+    explicit DetectDialog(QObject *parent = nullptr);
 
-        Q_OBJECT
+    //* read window properties or select one from mouse grab
+    void detect();
 
-        public:
+    //* window properties
+    QVariantMap properties() const;
 
-        //* constructor
-        explicit DetectDialog( QWidget* );
+Q_SIGNALS:
+    void detectionDone(bool);
 
-        //* read window properties or select one from mouse grab
-        void detect( WId window );
-
-        //* selected class
-        QByteArray selectedClass() const;
-
-        //* window information
-        const KWindowInfo& windowInfo() const
-        { return *(m_info.data()); }
-
-        //* exception type
-        InternalSettings::EnumExceptionType exceptionType() const
-        {
-            if( m_ui.windowClassCheckBox->isChecked() ) return InternalSettings::ExceptionWindowClassName;
-            else if( m_ui.windowTitleCheckBox->isChecked() ) return InternalSettings::ExceptionWindowTitle;
-            else return InternalSettings::ExceptionWindowClassName;
-        }
-
-        Q_SIGNALS:
-
-        void detectionDone( bool );
-
-        protected:
-
-        bool eventFilter( QObject* o, QEvent* e ) override;
-
-        private:
-
-        //* select window from grab
-        void selectWindow();
-
-        //* read window properties
-        void readWindow( WId window );
-
-        //* find window under cursor
-        WId findWindow();
-
-        //* execute
-        void executeDialog();
-
-        //* ui
-        Ui::BreezeDetectWidget m_ui;
-
-        //* invisible dialog used to grab mouse
-        QDialog* m_grabber = nullptr;
-
-        //* current window information
-        QScopedPointer<KWindowInfo> m_info;
-
-        //* wm state atom
-        quint32 m_wmStateAtom = 0;
-
-    };
+private:
+    //* properties
+    QVariantMap m_properties;
+};
 
 } // namespace
-
-#endif

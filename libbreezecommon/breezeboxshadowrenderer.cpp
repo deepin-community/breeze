@@ -24,7 +24,6 @@
 
 namespace Breeze
 {
-
 static inline int calculateBlurRadius(qreal stdDev)
 {
     // See https://www.w3.org/TR/SVG11/filters.html#feGaussianBlurElement
@@ -44,9 +43,8 @@ static inline QSize calculateBlurExtent(int radius)
     return QSize(blurRadius, blurRadius);
 }
 
-struct BoxLobes
-{
-    int left;  ///< how many pixels sample to the left
+struct BoxLobes {
+    int left; ///< how many pixels sample to the left
     int right; ///< how many pixels sample to the right
 };
 
@@ -90,11 +88,7 @@ static QVector<BoxLobes> computeLobes(int radius)
 
     Q_ASSERT(major + minor + final == blurRadius);
 
-    return {
-        {major, minor},
-        {minor, major},
-        {final, final}
-    };
+    return {{major, minor}, {minor, major}, {final, final}};
 }
 
 /**
@@ -110,8 +104,13 @@ static QVector<BoxLobes> computeLobes(int radius)
  * @param transposeInput Whether the input is transposed.
  * @param transposeOutput Whether the output should be transposed.
  **/
-static inline void boxBlurRowAlpha(const uint8_t *src, uint8_t *dst, int width, int horizontalStride,
-                                   int verticalStride, const BoxLobes &lobes, bool transposeInput,
+static inline void boxBlurRowAlpha(const uint8_t *src,
+                                   uint8_t *dst,
+                                   int width,
+                                   int horizontalStride,
+                                   int verticalStride,
+                                   const BoxLobes &lobes,
+                                   bool transposeInput,
                                    bool transposeOutput)
 {
     const int inputStep = transposeInput ? verticalStride : horizontalStride;
@@ -188,7 +187,7 @@ static inline void boxBlurAlpha(QImage &image, int radius, const QRect &rect = {
     const int pixelStride = image.depth() >> 3;
 
     const int bufferStride = qMax(width, height) * pixelStride;
-    QScopedPointer<uint8_t, QScopedPointerArrayDeleter<uint8_t> > buf(new uint8_t[2 * bufferStride]);
+    QScopedPointer<uint8_t, QScopedPointerArrayDeleter<uint8_t>> buf(new uint8_t[2 * bufferStride]);
     uint8_t *buf1 = buf.data();
     uint8_t *buf2 = buf1 + bufferStride;
 
@@ -310,9 +309,8 @@ QImage BoxShadowRenderer::render() const
     }
 
     QSize canvasSize;
-    for (const Shadow &shadow : qAsConst(m_shadows)) {
-        canvasSize = canvasSize.expandedTo(
-            calculateMinimumShadowTextureSize(m_boxSize, shadow.radius, shadow.offset));
+    for (const Shadow &shadow : std::as_const(m_shadows)) {
+        canvasSize = canvasSize.expandedTo(calculateMinimumShadowTextureSize(m_boxSize, shadow.radius, shadow.offset));
     }
 
     QImage canvas(canvasSize, QImage::Format_ARGB32_Premultiplied);
@@ -322,7 +320,7 @@ QImage BoxShadowRenderer::render() const
     boxRect.moveCenter(QRect(QPoint(0, 0), canvasSize).center());
 
     QPainter painter(&canvas);
-    for (const Shadow &shadow : qAsConst(m_shadows)) {
+    for (const Shadow &shadow : std::as_const(m_shadows)) {
         renderShadow(&painter, boxRect, m_borderRadius, shadow.offset, shadow.radius, shadow.color);
     }
     painter.end();

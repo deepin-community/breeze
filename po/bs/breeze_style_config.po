@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bosnianuniversetranslation\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-31 00:22+0000\n"
+"POT-Creation-Date: 2024-08-29 00:40+0000\n"
 "PO-Revision-Date: 2015-02-05 00:36+0000\n"
 "Last-Translator: Samir Ribić <Unknown>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
-#: main.cpp:24 main.cpp:28
+#: main.cpp:25 main.cpp:29
 #, kde-format
 msgid "Breeze Settings"
 msgstr ""
@@ -52,20 +52,20 @@ msgstr "&Vidljivost akceleratora tastature:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:85
 #, kde-format
-msgid "Always Hide Keyboard Accelerators"
-msgstr "Uvijek sakrij akceleratore tastature"
+msgid "Always hide"
+msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:90
 #, kde-format
-msgid "Show Keyboard Accelerators When Needed"
-msgstr "Prikaži akceleratore tastature kada je potrebno"
+msgid "Show when Alt key is pressed"
+msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:95
 #, kde-format
-msgid "Always Show Keyboard Accelerators"
-msgstr "Uvijek prikaži akceleratore tastature"
+msgid "Always show"
+msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _windowDragMode)
 #: ui/breezestyleconfig.ui:117
@@ -155,22 +155,25 @@ msgstr "&Tip dugmeta gornja strijelica:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:264 ui/breezestyleconfig.ui:283
-#, kde-format
-msgid "No Buttons"
+#, fuzzy, kde-format
+#| msgid "No Buttons"
+msgid "No buttons"
 msgstr "Bez dugmeta"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:269 ui/breezestyleconfig.ui:288
-#, kde-format
-msgid "One Button"
+#, fuzzy, kde-format
+#| msgid "One Button"
+msgid "One button"
 msgstr "Jedno dugme"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:274 ui/breezestyleconfig.ui:293
-#, kde-format
-msgid "Two Buttons"
+#, fuzzy, kde-format
+#| msgid "Two Buttons"
+msgid "Two buttons"
 msgstr "Dva dugmeta"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
@@ -196,3 +199,37 @@ msgstr ""
 #, kde-format
 msgid "Menu:"
 msgstr ""
+
+#~ msgid "Always Hide Keyboard Accelerators"
+#~ msgstr "Uvijek sakrij akceleratore tastature"
+
+#~ msgid "Show Keyboard Accelerators When Needed"
+#~ msgstr "Prikaži akceleratore tastature kada je potrebno"
+
+#~ msgid "Always Show Keyboard Accelerators"
+#~ msgstr "Uvijek prikaži akceleratore tastature"
+
+#~ msgid "Draw frame around page titles"
+#~ msgstr "Nacrtaj okvir oko naslova stranice"
+
+#~ msgid "Animations"
+#~ msgstr "Animacije"
+
+#, fuzzy
+#~| msgid "Animations d&uration:"
+#~ msgid "A&nimations duration:"
+#~ msgstr "T&rajanje animacije:"
+
+#, fuzzy
+#~| msgid "ms"
+#~ msgid " ms"
+#~ msgstr "ms"
+
+#~ msgid "Enable animations"
+#~ msgstr "Omogući animacije"
+
+#~ msgid "Advanced"
+#~ msgstr "Napredno"
+
+#~ msgid "Form"
+#~ msgstr "Forma"

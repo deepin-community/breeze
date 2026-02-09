@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-31 00:22+0000\n"
+"POT-Creation-Date: 2024-08-29 00:40+0000\n"
 "PO-Revision-Date: 2019-10-30 13:32+0200\n"
 "Last-Translator: Marek Laane <qiilaq69@gmail.com>\n"
 "Language-Team: Estonian <kde-et@lists.linux.ee>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 19.08.1\n"
 
-#: main.cpp:24 main.cpp:28
+#: main.cpp:25 main.cpp:29
 #, kde-format
 msgid "Breeze Settings"
 msgstr "Breeze seadistused"
@@ -49,20 +49,20 @@ msgstr "K&iirklahvide näitamine:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:85
 #, kde-format
-msgid "Always Hide Keyboard Accelerators"
-msgstr "Kiirklahvid peidetakse alati"
+msgid "Always hide"
+msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:90
 #, kde-format
-msgid "Show Keyboard Accelerators When Needed"
-msgstr "Kiirklahve näidatakse vajaduse korral"
+msgid "Show when Alt key is pressed"
+msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:95
 #, kde-format
-msgid "Always Show Keyboard Accelerators"
-msgstr "Kiirklahve näidatakse alati"
+msgid "Always show"
+msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _windowDragMode)
 #: ui/breezestyleconfig.ui:117
@@ -151,22 +151,25 @@ msgstr "Noole&ga üles nupu tüüp:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:264 ui/breezestyleconfig.ui:283
-#, kde-format
-msgid "No Buttons"
+#, fuzzy, kde-format
+#| msgid "No Buttons"
+msgid "No buttons"
 msgstr "Nuppudeta"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:269 ui/breezestyleconfig.ui:288
-#, kde-format
-msgid "One Button"
+#, fuzzy, kde-format
+#| msgid "One Button"
+msgid "One button"
 msgstr "Üks nupp"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:274 ui/breezestyleconfig.ui:293
-#, kde-format
-msgid "Two Buttons"
+#, fuzzy, kde-format
+#| msgid "Two Buttons"
+msgid "Two buttons"
 msgstr "Kaks nuppu"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
@@ -192,3 +195,27 @@ msgstr "Läbipaistmatu"
 #, kde-format
 msgid "Menu:"
 msgstr "Menüü:"
+
+#~ msgid "Always Hide Keyboard Accelerators"
+#~ msgstr "Kiirklahvid peidetakse alati"
+
+#~ msgid "Show Keyboard Accelerators When Needed"
+#~ msgstr "Kiirklahve näidatakse vajaduse korral"
+
+#~ msgid "Always Show Keyboard Accelerators"
+#~ msgstr "Kiirklahve näidatakse alati"
+
+#~ msgid "Draw frame around page titles"
+#~ msgstr "Raami kujutamine lehekülje tiitlite ümber"
+
+#~ msgid "Animations"
+#~ msgstr "Animatsioonid"
+
+#~ msgid "A&nimations duration:"
+#~ msgstr "Animatsiooni&de kestus:"
+
+#~ msgid " ms"
+#~ msgstr " ms"
+
+#~ msgid "Enable animations"
+#~ msgstr "Animatsioonide lubamine"

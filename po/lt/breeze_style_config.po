@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: trunk-kf 5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-08-31 00:22+0000\n"
-"PO-Revision-Date: 2019-06-01 19:24+0000\n"
+"POT-Creation-Date: 2024-08-29 00:40+0000\n"
+"PO-Revision-Date: 2024-08-31 21:33+0300\n"
 "Last-Translator: Moo\n"
 "Language-Team: Lithuanian <kde-i18n-lt@kde.org>\n"
 "Language: lt\n"
@@ -19,9 +19,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 3.4.2\n"
 
-#: main.cpp:24 main.cpp:28
+#: main.cpp:25 main.cpp:29
 #, kde-format
 msgid "Breeze Settings"
 msgstr "Breeze nuostatos"
@@ -53,20 +53,20 @@ msgstr "&Prieigos klavišų matomumas:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:85
 #, kde-format
-msgid "Always Hide Keyboard Accelerators"
-msgstr "Visada slėpti prieigos klavišus"
+msgid "Always hide"
+msgstr "Visada slėpti"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:90
 #, kde-format
-msgid "Show Keyboard Accelerators When Needed"
-msgstr "Rodyti prieigos klavišus, kai reikia"
+msgid "Show when Alt key is pressed"
+msgstr "Rodyti, kai nuspaustas Alt klavišas"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _mnemonicsMode)
 #: ui/breezestyleconfig.ui:95
 #, kde-format
-msgid "Always Show Keyboard Accelerators"
-msgstr "Visada rodyti prieigos klavišus"
+msgid "Always show"
+msgstr "Visada rodyti"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _windowDragMode)
 #: ui/breezestyleconfig.ui:117
@@ -157,21 +157,21 @@ msgstr "&Viršutinės rodyklės mygtuko tipas:"
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:264 ui/breezestyleconfig.ui:283
 #, kde-format
-msgid "No Buttons"
+msgid "No buttons"
 msgstr "Jokių mygtukų"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:269 ui/breezestyleconfig.ui:288
 #, kde-format
-msgid "One Button"
+msgid "One button"
 msgstr "Vienas mygtukas"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarSubLineButtons)
 #. i18n: ectx: property (text), item, widget (QComboBox, _scrollBarAddLineButtons)
 #: ui/breezestyleconfig.ui:274 ui/breezestyleconfig.ui:293
 #, kde-format
-msgid "Two Buttons"
+msgid "Two buttons"
 msgstr "Du mygtukai"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
@@ -197,3 +197,48 @@ msgstr "Nepermatomas"
 #, kde-format
 msgid "Menu:"
 msgstr "Meniu:"
+
+#~ msgid "Always Hide Keyboard Accelerators"
+#~ msgstr "Visada slėpti prieigos klavišus"
+
+#~ msgid "Show Keyboard Accelerators When Needed"
+#~ msgstr "Rodyti prieigos klavišus, kai reikia"
+
+#~ msgid "Always Show Keyboard Accelerators"
+#~ msgstr "Visada rodyti prieigos klavišus"
+
+#~ msgid "Draw frame around page titles"
+#~ msgstr "Rodyti rėmelius aplink puslapių antraštes"
+
+#~ msgid "Animations"
+#~ msgstr "Animacijos"
+
+#~ msgid "A&nimations duration:"
+#~ msgstr "A&nimacijų trukmė:"
+
+#~ msgid " ms"
+#~ msgstr " ms"
+
+#~ msgid "Enable animations"
+#~ msgstr "Įjungti animacijas"
+
+#~ msgid "Advanced"
+#~ msgstr "Išsamiau"
+
+#~ msgid "Widget Style"
+#~ msgstr "Valdiklių stilius"
+
+#~ msgid "Modify the appearance of widgets"
+#~ msgstr "Keisti valdiklių išvaizdą"
+
+#~ msgid "Window Decorations"
+#~ msgstr "Lango dekoracijos"
+
+#~ msgid "Modify the appearance of window decorations"
+#~ msgstr "Keisti lango dekoracijų išvaizdą"
+
+#~ msgid "Unable to find breeze style configuration plugin"
+#~ msgstr "Nepavyko rasti breeze stiliaus konfigūravimo priedo"
+
+#~ msgid "Dialog"
+#~ msgstr "Dialogas"
