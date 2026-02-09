@@ -8,7 +8,7 @@ export DEB_BUILD_MAINT_OPTIONS=hardening=+all
 	dh $@
 
 override_dh_auto_configure:
-	dh_auto_configure -- -DBUILD_QT5=ON -DBUILD_QT6=ON
+	dh_auto_configure -- -DBUILD_QT5=ON -DBUILD_QT6=ON -DWITH_DECORATIONS=OFF
 
 #override_dh_install:
 	# This is required to make sure Plasma does not

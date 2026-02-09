@@ -1,3 +1,9 @@
+breeze (4:6.2.1-1deepin1) unstable; urgency=medium
+
+  * Disable KDecoration build.
+
+ -- Wang Zichong <wangzichong@deepin.org>  Mon, 09 Feb 2026 10:33:00 +0800
+
 breeze (4:6.2.1-1) experimental; urgency=medium
 
   [ Aurélien COUDERC ]
